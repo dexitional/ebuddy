@@ -22,7 +22,7 @@ export default function OmegaVoting({ setPage }: any) {
 
   const getPortfolio = (name: string) => {
     return (
-      evsdata?.candidates?.filter((r: any) => r.portfolio == name)
+      evsdata?.candidates?.filter((r: any) => r.portfolio.name == name)
     );
   };
 

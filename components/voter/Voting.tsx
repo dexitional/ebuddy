@@ -24,7 +24,7 @@ export default function Voting({ setPage }: any) {
     return (
       evsdata &&
       evsdata.candidates &&
-      evsdata?.candidates.filter((r: any) => r.portfolio == name)
+      evsdata?.candidates.filter((r: any) => r.portfolio.name == name)
     );
   };
 
