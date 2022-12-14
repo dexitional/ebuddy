@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 //const sms = require("../config/sms");
-const API = require("../model/apiModel");
+const API = require("../model/apiModelSupabase");
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default {
