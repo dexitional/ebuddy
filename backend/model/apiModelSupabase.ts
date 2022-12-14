@@ -271,7 +271,7 @@ module.exports = {
       if (res1 && res1.length > 0) data.portfolios = res1;
       // Candidate data
       //var res2 = await db.query("select c.*,p.name as portfolio,p.id as pid from eb_candidate c left join eb_portfolio p on c.portfolio_id = p.id where c.status = 1 and p.election_id = " +mid);
-      const { data:res2 } = await db.from('eb_candidate').select(`*,eb_portfolio.name as portfolio,portfolio_id as pid`).eq('eb_candidate.status', 1).eq('eb_portfolio.election_id', mid)
+      const { data:res2 } = await db.from('eb_candidate').select(`*, portfolio:eb_portfolio(name),pid:portfolio_id`).eq('status', 1).eq('eb_portfolio.election_id', mid)
       if (res2 && res2.length > 0) data.candidates = res2;
       // Election data
       //var res3 = await db.query("select e.* from eb_election e where e.id = "+mid);
@@ -300,7 +300,7 @@ module.exports = {
         if (candidates) {
           for (const candid of candidates) {
             //var cs = await db.query("select c.*,p.name as portfolio from eb_candidate c left join eb_portfolio p on c.portfolio_id = p.id where p.election_id = " +rid +" and c.id = " +candid);
-            var { data:cs } = await db.from('eb_candidate').select(`*,eb_portfolio.name as portfolio`).eq('election_id', rid).eq('id', candid)
+            var { data:cs } = await db.from('eb_candidate').select(`*,portfolio:eb_portfolio(name)`).eq('election_id', rid).eq('id', candid)
             if (cs && cs.length > 0) selections.push(cs[0]);
           }
         }
@@ -315,7 +315,7 @@ module.exports = {
       var { data:res } = await db.from('eb_election').select('*').eq('id', id)
       if (res && res.length > 0) {
         //var voters = await db.query("select v.*,ifnull(ev.vote_status,0) as voted from eb_voter v left join eb_elector ev on (v.tag = ev.tag and ev.election_id = "+id+") where v.centre_id = " + res[0].centre_id);
-        var { data:voters } = await db.from('eb_voter').select(`*,vote_status as voted`).eq('centre_id', id)
+        var { data:voters } = await db.from('eb_voter').select(`*,voted:vote_status`).eq('centre_id', id)
         return { ...(res && res[0]), electors:voters };
       } 
       return null;
@@ -323,7 +323,6 @@ module.exports = {
 
     postVoteData: async (data:any) => {
       const { id, tag, votes, name } = data;
-  
       // START TRANSACTION
       try {
         // Get Portfolio count & Verify whether equal to data posted
@@ -332,7 +331,7 @@ module.exports = {
         if (res && res.length > 0) {
           const count = res.length;
           //var vt = await db.query("select * from eb_elector where election_id = " +id +" and trim(tag) = '" +tag +"' and vote_status = 1");
-          var { data:vt } = await db.from('eb_portfolio').select('*').eq('tag', tag).eq('election_id', id).eq('vote_status', 1)
+          var { data:vt } = await db.from('eb_elector').select('*').eq('tag', tag).eq('election_id', id).eq('vote_status', 1)
           if (vt && vt.length <= 0) {
             if (count == Object.values(votes).length) {
               // Update Candidate Votes Count
@@ -347,13 +346,15 @@ module.exports = {
                     const ups = await db.query("update eb_candidate set votes = (votes+1) where id = " + val);
                     if (ups.affectedRows > 0) update_count += 1;
                     */
-                    var { data:ups }:any = await db.from('eb_candidate').update({votes: votes+1}).eq('id', val)
-                    if (ups?.status === 200) update_count += 1;
-                    
+                    //var { data:ups,error }:any = await db.from('eb_candidate').update({ votes: parseInt(votes+1) }).eq('id', val).select()
+                     //if (ups?.status === 200) update_count += 1;
+                    await db.rpc('logvote', { row_id: val })
+                    update_count += 1;
+                   
                   }
                 }
               }
-  
+              console.log(count,update_count)
               if (count != update_count) {
                 throw new Error(`Votes partially received`);
                 //return { success: false, msg: 'Votes partially recorded', code: 1001 }
@@ -370,7 +371,7 @@ module.exports = {
               //const ins = await db.query("insert into eb_elector set ?", dm);
               //if (ins && ins.insertId > 0) {
               
-              const { data:ins }:any = await db.from('eb_elector').insert(dm)
+              const { error:ins }:any = await db.from('eb_elector').insert(dm)
               if (ins && ins.status === 201) {
                 return { success: true, msg: "Voted successfully", code: 1000 };
               } else {
