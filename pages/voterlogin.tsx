@@ -6,7 +6,7 @@ import { FcShop } from 'react-icons/fc';
 import { useUserStore } from '../utils/store';
 import { verifyVoter } from '../utils/apiClient';
 import Adinkra from '../public/adinkra.png'
-import UCC60 from '../public/@60.jpg'
+import UCC60 from '../public/logo/esiama_logo.png'
 
 export default function VoterLogin() {
   

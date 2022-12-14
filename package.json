@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.2.0",
     "axios": "^0.27.2",
     "chart.js": "^3.9.1",
     "express-fileupload": "^1.4.0",
@@ -26,7 +27,7 @@
     "react-charts": "^2.0.0-beta.7",
     "react-dom": "18.1.0",
     "react-google-charts": "^4.0.0",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.7.1",
     "socket.io": "^4.5.2",
     "socket.io-client": "^4.5.2",
     "zustand": "^4.1.1"
