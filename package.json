@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chart.js": "^3.9.1",
+    "express-fileupload": "^1.4.0",
+    "file-saver": "^2.0.5",
+    "formidable": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "next": "latest",
+    "next-connect": "^0.13.0",
+    "node-mysql-transaction": "^0.2.1",
+    "notiflix": "^3.2.5",
+    "react": "18.1.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-chartlet": "^1.2.0",
+    "react-charts": "^2.0.0-beta.7",
+    "react-dom": "18.1.0",
+    "react-google-charts": "^4.0.0",
+    "react-icons": "^4.4.0",
+    "socket.io": "^4.5.2",
+    "socket.io-client": "^4.5.2",
+    "zustand": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.35",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.5",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.2",
+    "typescript": "4.7.2"
+  }
+}
