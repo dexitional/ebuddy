@@ -246,7 +246,8 @@ export default function OmegaVoting({ setPage }: any) {
                           <div className="flex items-center justify-between">
                             <div className="overflow-hidden flex-col text-center items-center border border-1 border-slate-200 rounded-md">
                                 <img
-                                  src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                  //src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                  src={`/upload/2022/${r.photo_id}.jpg`}
                                   alt={r.name}
                                   loading="lazy"
                                   className="w-full h-48 object-cover transition-transform duration-200 group-hover:scale-110"
