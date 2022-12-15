@@ -487,12 +487,13 @@ export default {
     const { eid,tag } = req.query
     var pic = await API.fetchPhoto(tag, eid); // Photo
     if (pic && pic.length > 0) {
-      var filepath = path.join(__dirname, "/../../../../public", pic[0]?.path);
+      var filepath = path.join(__dirname, "/../../../public", pic[0]?.path);
       //var filepath = path.join("./public", pic[0]?.path);
       //var filepath = path.join(__dirname,"/../.././public", pic[0]?.path)
       var nonepath = path.join(__dirname,"../.././public", "none.png")
       console.log(filepath);
       console.log(__dirname);
+      console.log(__dirname, "/../../../public", pic[0]?.path);
       try {
         var stats = fs.statSync(filepath);
         if (stats) {
