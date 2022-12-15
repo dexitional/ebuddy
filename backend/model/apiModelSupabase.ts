@@ -81,13 +81,13 @@ module.exports = {
       if(vt && vt.length == 1){
         //const dm = await db.query("select en.* from eb_election en where en.live_status = 1 and en.centre_id = "+vt[0].centre_id);
         const { data:dm } = await db.from('eb_election').select(`*`).eq('live_status', 1).eq('centre_id', vt[0].centre_id)
-        
         if(dm && dm.length > 0){
             const dt = [];
             for(var d of dm){
               var vm = <any>{}
               //const et = await db.query("select ev.vote_status,ev.vote_time,ev.vote_sum from eb_elector ev where ev.tag = '"+username+"' and ev.election_id = "+d.id);
-              const { data:et } = await db.from('eb_elector').select(`*`).eq('tag', username).eq('election_id', d.id)
+              const { data:et,error } = await db.from('eb_elector').select(`*`).eq('tag', username).eq('election_id', d.id)
+              console.log(et,error)
         
               if(et && et.length > 0){
                 vm = { ...et[0] }
@@ -415,14 +415,14 @@ module.exports = {
       var res;
       if (tag == "logo") {
         //res = await db.query("select logo as path from eb_election where id = ?", [eid]);
-        var { data:res }:any = await db.from('eb_election').select(`logo as path`).eq('id', eid)
+        var { data:res }:any = await db.from('eb_election').select(`path:logo`).eq('id', eid)
       }else if (tag == "centre") {
          res = [{path:`./upload/logos/${eid.split(' ').join('').toLowerCase()}.jpg`}]
       }else if (tag == "voter") {
         res = [{path:`./upload/voter/${eid.split('/').join('').toLowerCase()}.jpg`}]
       }else if (tag == "candid") {
         //res = await db.query("select photo as path from eb_candidate where id = ?", [eid]);
-        var { data:res }:any = await db.from('eb_candidate').select(`photo as path`).eq('id', eid)
+        var { data:res }:any = await db.from('eb_candidate').select(`path:photo`).eq('id', eid)
       }
       return res;
     },
@@ -465,7 +465,7 @@ module.exports = {
     var res;
     const { id, data:body } = data;
     if(data){
-      const sql = "update eb_election set ? where id = "+id;
+      //const sql = "update eb_election set ? where id = "+id;
       //const res = await db.query(sql, body);
       var { data:res }:any = await db.from('eb_election').update(body).eq('id',id)
       return res
