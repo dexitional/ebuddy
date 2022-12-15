@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   images: {
-    domains: ['localhost','ebuddy.vercel.app'],
+    loader: "akamai",
+    path: "/",
   },
   
 }
