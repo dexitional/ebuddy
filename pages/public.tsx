@@ -49,9 +49,9 @@ export default function Public() {
     <PublicLayout>
     <h3 className="rounded-full mb-4 px-10 py-1 bg-slate-100 text-xl text-gray-500 font-semibold tracking-widest">PUBLIC MONITOR</h3>
     <div className="flex flex-row ">
-      <div className="w-[33.33%] ">
+      <div className="hidden w-[33.33%] ">
         <div className="p-4 rounded border overflow-y-scroll">
-          <VerifyList />
+          {/*<VerifyList />*/}
         </div>
       </div>
       <div className="flex-1 flex flex-row">
