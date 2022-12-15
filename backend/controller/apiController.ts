@@ -487,29 +487,30 @@ export default {
     const { eid,tag } = req.query
     var pic = await API.fetchPhoto(tag, eid); // Photo
     if (pic && pic.length > 0) {
-      //var filepath = path.join(__dirname, "/../../../../public", pic[0]?.path);
-      var filepath = path.join("./public", pic[0]?.path);
+      var filepath = path.join(__dirname, "/../../../../public", pic[0]?.path);
+      //var filepath = path.join("./public", pic[0]?.path);
+      //var filepath = path.join(__dirname,"/../.././public", pic[0]?.path)
+      var nonepath = path.join(__dirname,"../.././public", "none.png")
       console.log(filepath);
-      console.log(__dirname);
       try {
         var stats = fs.statSync(filepath);
         if (stats) {
           res.setHeader('Content-Type', 'image/jpg')
           res
             .status(200)
-            .send(fs.readFileSync(path.join("./public", pic[0]?.path)));
+            .send(fs.readFileSync(filepath));
         } else {
           res.setHeader('Content-Type', 'image/png')
           res
             .status(200)
-            .send(fs.readFileSync((path.join("./public", "none.png"))));
+            .send(fs.readFileSync(nonepath));
         }
       } catch (e) {
         console.log(e);
         res.setHeader('Content-Type', 'image/png')
         res
           .status(200)
-          .send(fs.readFileSync(path.join("./public/upload", "none.png")));
+          .send(fs.readFileSync(nonepath));
       }
     } else {
       res.setHeader('Content-Type', 'image/png')
