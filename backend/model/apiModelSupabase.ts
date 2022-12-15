@@ -415,9 +415,9 @@ module.exports = {
         //res = await db.query("select logo as path from eb_election where id = ?", [eid]);
         var { data:res }:any = await db.from('eb_election').select(`path:logo`).eq('id', eid)
       }else if (tag == "centre") {
-         res = [{path:`./upload/logos/${eid.split(' ').join('').toLowerCase()}.jpg`}]
+         res = [{path:`/upload/logos/${eid.split(' ').join('').toLowerCase()}.jpg`}]
       }else if (tag == "voter") {
-        res = [{path:`./upload/voter/${eid.split('/').join('').toLowerCase()}.jpg`}]
+        res = [{path:`/upload/voter/${eid.split('/').join('').toLowerCase()}.jpg`}]
       }else if (tag == "candid") {
         //res = await db.query("select photo as path from eb_candidate where id = ?", [eid]);
         var { data:res }:any = await db.from('eb_candidate').select(`path:photo`).eq('id', eid)
