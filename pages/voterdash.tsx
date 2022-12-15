@@ -38,7 +38,7 @@ export default function VoterDash() {
     <VoterLayout>
     <h3></h3>
     <div className="w-full flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:justify-center sm:space-x-6">
-        <div className="p -2 w-full sm:w-56 rounded border flex flex-row sm:flex-col space-x-2">
+        <div className="p-2 w-full sm:w-56 rounded border flex sm:hidden flex-row sm:flex-col space-x-2">
             <div className="p-1 h-full w-18 sm:w-auto sm:h-48 rounded bg-slate-100 flex items-center justify-center">
                {user && <img src={`/api/photos/?tag=voter&eid=${user?.tag}` || Photo.src} className="h-10 sm:h-44 object-cover rounded-md opacity-60 overflow-hidden"/> }
             </div>

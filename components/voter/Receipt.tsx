@@ -62,7 +62,8 @@ export default function Receipt({setPage}:any) {
               >
                 <div className="my-2 pb-4 flex flex-row items-start space-x-6 ">
                   <img
-                    src={`/api/photos/?tag=candid&eid=${r.id}`}
+                    //src={`/api/photos/?tag=candid&eid=${r.id}`}
+                    src={`/upload/2022/${r.photo_id}.jpg`}
                     alt="Candidate"
                     loading="lazy"
                     className="h-24 w-22 object-contain p-2 border border-1 border-slate-200 rounded-md"
