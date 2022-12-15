@@ -177,7 +177,7 @@ export default function OmegaVoting({ setPage }: any) {
     
   
   return (
-    <>
+    <div>
       <div className={styles.wrapper}>
         <div className={styles.main}>
           <h3 className="text-lg font-bold text-gray-500 text-center">
@@ -250,7 +250,7 @@ export default function OmegaVoting({ setPage }: any) {
                                   src={`/upload/2022/${r.photo_id}.jpg`}
                                   alt={r.name}
                                   loading="lazy"
-                                  className="w-full h-48 object-cover transition-transform duration-200 group-hover:scale-110"
+                                  className="w-full h-[16rem] object-cover transition-transform duration-200 group-hover:scale-110"
                                 />
                                 <p className="my-3 text-sm uppercase font-bold text-red-900/80">
                                   {r.teaser}
@@ -301,6 +301,6 @@ export default function OmegaVoting({ setPage }: any) {
 
         {/* <div className={styles.aside}></div> */}
       </div>
-    </>
+    </div>
   );
 }
