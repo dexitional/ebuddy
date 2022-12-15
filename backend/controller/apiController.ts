@@ -279,6 +279,7 @@ export default {
   postData: async (req:NextApiRequest, res:NextApiResponse) => {
     try {
       var resp = await API.postVoteData(req.body);
+      console.log(resp)
       res.status(200).json(resp);
     } catch (e) {
       console.log(e);

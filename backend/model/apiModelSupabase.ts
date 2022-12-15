@@ -85,7 +85,7 @@ module.exports = {
             for(var d of dm){
               var vm = <any>{}
               //const et = await db.query("select ev.vote_status,ev.vote_time,ev.vote_sum from eb_elector ev where ev.tag = '"+username+"' and ev.election_id = "+d.id);
-              const { data:et } = await db.from('eb_elector').select(`*`).eq('tag', username).eq('election_id', d.id)
+              const { data:et } = await db.from('eb_elector').select(`vote_status,vote_time,vote_sum`).eq('tag', username).eq('election_id', d.id)
               
               if(et && et.length > 0){
                 vm = { ...et[0] }
@@ -369,8 +369,9 @@ module.exports = {
               //const ins = await db.query("insert into eb_elector set ?", dm);
               //if (ins && ins.insertId > 0) {
               
-              const { error:ins }:any = await db.from('eb_elector').insert(dm)
-              if (ins && ins.status === 201) {
+              const { data:ins,error }:any = await db.from('eb_elector').insert(dm).select()
+              console.log(ins,error)
+              if (ins && ins.length > 0) {
                 return { success: true, msg: "Voted successfully", code: 1000 };
               } else {
                 throw new Error(`Votes saved for elector`);
@@ -383,19 +384,19 @@ module.exports = {
             }
           } else {
             // Voted Already
-            throw new Error(`Elector already voted`);
+            throw new Error(`Votes already submitted`);
             //return { success: false, msg: 'Elector already voted', code: 1004 }
           }
         } else {
           throw new Error(`Portfolio not found`);
           //return { success: false, msg: 'Portfolio not found', code: 1005 }
         }
-      } catch (e) {
+      } catch (e: any) {
         //db.rollback();
         //console.info('Rollback successful');
         return {
           success: false,
-          msg: "Please Submit Again",
+          msg: e.message,
           code: 1004,
         };
       }
