@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: false,
   images: {
-    domains: ['localhost'],
+    domains: ['localhost','ebuddy.vercel.app'],
   },
   
 }
