@@ -32,21 +32,17 @@ export default {
     const { username,password } = req.body;
     try {
       var user = await API.verifyVoter(username,password);
+      console.log(user)
       if (user) {
-        if(user.vote_status == 1) {
+        if(user.voted == 1) {
           res.status(200).json({
             success: false,
             msg: "You have Voted !!",
           });
-        }else if(user.verified == 1){
+        }else{
             const data = { ...user, photo: `/api/photos/?tag=${encodeURIComponent(username)}` }
             res.status(200).json({ success: true, data });
-        } else {
-          res.status(200).json({
-            success: false,
-            msg: "Voter Disabled !!",
-          });
-        }
+        } 
       }else{
         res.status(200).json({
           success: false,

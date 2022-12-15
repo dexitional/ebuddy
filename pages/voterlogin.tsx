@@ -35,9 +35,9 @@ export default function VoterLogin() {
         }
         setLoading(false)
 
-      } catch (e){
+      } catch (e: any){
         console.log(e)
-        setMsg(`Voter not verified !`);
+        setMsg(e.message);
         setTimeout(() => setMsg(''), 5000)
         setLoading(false)
       }
