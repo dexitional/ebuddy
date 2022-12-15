@@ -84,6 +84,8 @@ export default function OmegaVoting({ setPage }: any) {
           if(electionIndex == elections.length-1) {
             //Update Voter Status && Verification Status
             const ac = await finalizeVote(user?.centre_id,user?.tag);
+            console.log(resp,electionIndex,elections.length-1,ac)
+        
             if(ac.success){
               Notiflix.Notify.success('VOTED SUCCESSFULLY!');
               Router.push('/voterlogin')

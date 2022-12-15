@@ -370,7 +370,6 @@ module.exports = {
               //if (ins && ins.insertId > 0) {
               
               const { data:ins,error }:any = await db.from('eb_elector').insert(dm).select()
-              console.log(ins,error)
               if (ins && ins.length > 0) {
                 return { success: true, msg: "Voted successfully", code: 1000 };
               } else {
@@ -450,7 +449,7 @@ module.exports = {
   postVoteStatus: async (id:string,tag:string) => {
     /*const sql = "update eb_voter set ? where tag = '"+tag+"' and centre_id = " + id;
     const res = await db.query(sql, { verified: 0, voted: 1 });*/
-    var { data:res }:any = await db.from('eb_voter').update({ verified: 0, voted: 1 }).eq('tag',tag).eq('centre_id',id)
+    var { data:res }:any = await db.from('eb_voter').update({ verified: 0, voted: 1 }).eq('tag',tag).eq('centre_id',id).select()
     return res;
   },
 
