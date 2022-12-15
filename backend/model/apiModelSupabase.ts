@@ -203,7 +203,7 @@ module.exports = {
    fetchVotersByActiveCentre : async (search:any,page:any) => {
         var res;
         //const ct = await db.query("select * from eb_centre en where `default` = 1");
-         const { data:ct } = await db.from('eb_centre').select(`*,eb_centre(id)`).eq('eb_centre.default',1)
+         const { data:ct } = await db.from('eb_centre').select(`*`).eq('default',1)
          if(ct && ct.length > 0){
           /*
           const sql = search ?
