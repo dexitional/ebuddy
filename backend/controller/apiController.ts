@@ -492,6 +492,7 @@ export default {
       //var filepath = path.join(__dirname,"/../.././public", pic[0]?.path)
       var nonepath = path.join(__dirname,"../.././public", "none.png")
       console.log(filepath);
+      console.log(__dirname);
       try {
         var stats = fs.statSync(filepath);
         if (stats) {
