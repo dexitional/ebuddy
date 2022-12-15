@@ -48,8 +48,7 @@ module.exports = {
    fetchElectionByVoter : async (username:string) => {
       var res;
       //const vt = await db.query("select v.* from eb_voter v left join eb_centre c on v.centre_id = c.id where  c.`default` = 1 and v.verified = 1 and v.tag = '"+username+"'");
-      const { data:vt,error } = await db.from('eb_centre').select('*').eq('eb_centre.default', 1).eq('tag', username)
-      console.log(vt)
+      const { data:vt } = await db.from('eb_centre').select('*').eq('eb_centre.default', 1).eq('tag', username)
       if(vt && vt.length == 1){
          //const dm = await db.query("select en.* from eb_election en where en.centre_id = "+vt[0].centre_id);
          const { data:dm } = await db.from('eb_election').select('*').eq('centre_id', 1).eq('tag', vt[0].centre_id)
@@ -59,7 +58,7 @@ module.exports = {
                var vm = {}
                //const et = await db.query("select ev.vote_status,ev.vote_time,ev.vote_sum from eb_elector ev where ev.tag = '"+username+"' and ev.election_id = "+d.id);
                const { data:et } = await db.from('eb_elector').select(`vote_status,vote_time,vote_sum`).eq('tag', username).eq('election_id', d.id)
-        
+               
                if(et && et.length > 0){
                   vm = { ...et[0] }
                }else{
@@ -86,9 +85,8 @@ module.exports = {
             for(var d of dm){
               var vm = <any>{}
               //const et = await db.query("select ev.vote_status,ev.vote_time,ev.vote_sum from eb_elector ev where ev.tag = '"+username+"' and ev.election_id = "+d.id);
-              const { data:et,error } = await db.from('eb_elector').select(`*`).eq('tag', username).eq('election_id', d.id)
-              console.log(et,error)
-        
+              const { data:et } = await db.from('eb_elector').select(`*`).eq('tag', username).eq('election_id', d.id)
+              
               if(et && et.length > 0){
                 vm = { ...et[0] }
               }else{
