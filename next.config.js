@@ -3,8 +3,6 @@ module.exports = {
   reactStrictMode: false,
   images: {
     domains: ['localhost','ebuddy.vercel.app'],
-    loader: "akamai",
-    path: "/",
   },
   
 }
