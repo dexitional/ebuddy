@@ -30,11 +30,11 @@ export default function AdminList({page,setPage,setEid }:any) {
   return (
     <div>
                <h2 className="px-4 py-1 mb-4 bg-slate-100 rounded text-md font-bold text-gray-500">ELECTORAL ADMIN MENUS</h2>
-               <div className="flex flex-col sm:flex-wrap sm:flex-row sm:justify-evenly">
+               <div className="grid sm:grid-cols-3 ">
                   
                  { ['admin','super'].includes(admin?.role) && (
                   <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
-                      <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
+                      <div className="hidden my-2 space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
                         <span className="px-3 py-0.5 rounded-full border-2 border-blue-900">ALL CENTRE-STAGED</span>
                       </div>
                       <div className="flex flex-col justify-center">
@@ -44,8 +44,8 @@ export default function AdminList({page,setPage,setEid }:any) {
                   )}
 
                   { ['admin','super'].includes(admin?.role) && (
-                  <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
-                      <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
+                  <div className="hidden my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
+                      <div className="hidden my-2 space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
                         <span className="px-3 py-0.5 rounded-full border-2 border-blue-900">ALL REGISTERED CENTRES</span>
                       </div>
                       <div className="flex flex-col justify-center">
@@ -57,7 +57,7 @@ export default function AdminList({page,setPage,setEid }:any) {
                  
                   { ['admin','super'].includes(admin?.role) && (
                   <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
-                      <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
+                      <div className="hidden my-2 space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
                         <span className="px-3 py-0.5 rounded-full border-2 border-blue-900">ALL REGISTERED ELECTION</span>
                       </div>
                       <div className="flex flex-col justify-center">
@@ -67,7 +67,7 @@ export default function AdminList({page,setPage,setEid }:any) {
                   )}
                   
                   <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
-                      <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
+                      <div className="hidden my-2 space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[11px]">
                         <span className="px-3 py-0.5 rounded-full border-2 border-blue-900">ALL REGISTERED STUDENT</span>
                       </div>
                       <div className="flex flex-col justify-center">
@@ -75,51 +75,48 @@ export default function AdminList({page,setPage,setEid }:any) {
                       </div>
                   </div>
 
-                  { ['admin','super'].includes(admin?.role) && (
+                  { elections && ['admin','super'].includes(admin?.role) && (
                   <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
                      <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[10px]">
                         { elections.map((row:any) => (
-                          <button onClick={() => gotoControl(row.id,row.name)} key={row.id} className="px-3 py-0.5 rounded-full bg-slate-100 border-2 border-blue-900">{row.tag?.toUpperCase()} ELECTION</button>
+                          <div onClick={() => gotoControl(row.id,row.name)} key={row.id} className="w-full flex flex-col justify-center cursor-pointer">
+                            <span className=" px-3 py-4 rounded-b text-white text-lg text-center font-bold border bg-blue-900">{row.tag?.toUpperCase()} CONTROLS</span>
+                          </div>
                           ))
                         }
                       </div>
-                      <span className="flex flex-col justify-center">
-                        <span className="py-4 rounded-b text-white text-lg text-center font-bold border bg-blue-900 cursor-default">CONTROLS</span>
-                      </span>
+                  </div>
+                   )}
+
+                  { elections && ['admin','super'].includes(admin?.role) && (
+                  <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
+                     <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[10px]">
+                        { elections.map((row:any) => (
+                          <div onClick={() => gotoControl(row.id,row.name)} key={row.id} className="w-full flex flex-col justify-center cursor-pointer ">
+                            <span className=" px-3 py-4 rounded-b text-white text-lg text-center font-bold border bg-blue-900">{row.tag?.toUpperCase()} PORTFOLIOS</span>
+                          </div>
+                          ))
+                        }
+                      </div>
+                  </div>
+                   )}
+
+
+                  { elections && ['admin','super'].includes(admin?.role) && (
+                  <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
+                     <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[10px]">
+                        { elections.map((row:any) => (
+                           <div onClick={() => gotoControl(row.id,row.name)} key={row.id} className="w-full flex flex-col justify-center cursor-pointer ">
+                             <span className=" px-3 py-4 rounded-b text-white text-lg text-center font-bold border bg-blue-900">{row.tag?.toUpperCase()} CANDIDATES</span>
+                           </div>
+                          ))
+                        }
+                      </div>
                   </div>
                    )}
 
                   { ['admin','super'].includes(admin?.role) && (
-                  <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
-                     <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[10px]">
-                        { elections.map((row:any) => (
-                          <button onClick={() => gotoControl(row.id,row.name)} key={row.id} className="px-3 py-0.5 rounded-full bg-slate-100 border-2 border-blue-900">{row.tag?.toUpperCase()} ELECTION</button>
-                          ))
-                        }
-                      </div>
-                      <span className="flex flex-col justify-center">
-                        <span className="py-4 rounded-b text-white text-lg text-center font-bold border bg-blue-900 cursor-default">PORTFOLIOS</span>
-                      </span>
-                  </div>
-                   )}
-
-
-                  { ['admin','super'].includes(admin?.role) && (
-                  <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
-                     <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[10px]">
-                        { elections.map((row:any) => (
-                          <button onClick={() => gotoControl(row.id,row.name)} key={row.id} className="px-3 py-0.5 rounded-full bg-slate-100 border-2 border-blue-900">{row.tag?.toUpperCase()} ELECTION</button>
-                          ))
-                        }
-                      </div>
-                      <span className="flex flex-col justify-center">
-                        <span className="py-4 rounded-b text-white text-lg text-center font-bold border bg-blue-900 cursor-default">CANDIDATES</span>
-                      </span>
-                  </div>
-                   )}
-
-                  { ['admin','super'].includes(admin?.role) && (
-                  <div className="my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
+                  <div className="hidden my-3 p-4 w-full sm:w-80 rounded border border-blue-900">
                       <div className="my-2 flex space-x-2 flex-wrap  items-center justify-center font-bold text-blue-900 text-[10px]">
                          <button onClick={() => null} className="px-3 py-0.5 rounded-full bg-slate-100 border-2 text-blue-900 border-blue-900">LOAD DATA</button>
                          <button onClick={() => null} className="px-3 py-0.5 rounded-full bg-slate-100 border-2 text-green-900 border-green-900">VIEW RESULTS</button>

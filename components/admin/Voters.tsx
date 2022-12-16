@@ -34,10 +34,13 @@ export default function Voters({setPage}: any) {
   }
 
   const verifyVoter = async (id:string) => {
-    const res  = await sendToVoter(id)
-    if(res.success){
-      Notiflix.Notify.success('VOTER CRENDENTIALS SENT!');
-      loadRegister()
+    const ok = window.confirm("SEND VOTER CREDENTIALS ?")
+    if(ok){
+      const res  = await sendToVoter(id)
+      if(res.success){
+        Notiflix.Notify.success('VOTER CRENDENTIALS SENT!');
+        loadRegister()
+      }
     }
   }
 
