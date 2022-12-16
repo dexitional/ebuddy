@@ -1,16 +1,16 @@
 // SMS 
 var axios = require('axios');
 
-module.exports = async function(phone,msg) {
+module.exports = async function(phone,msg,sender = 'evoteBot') {
     const data = {
-        //key : 'pgC2DPZTwdbe68qPkuo4G36bV', // Bulksmsgh
-        key : 'TFkrdSQimG3aMBcBmCqaiwhsH', //'B8pRALyxDgt4l5nRLOYVPoIm1', // Mnotify
-        from : 'AUCC',
+        key : 'pgC2DPZTwdbe68qPkuo4G36bV', // Bulksmsgh
+        //key : 'TFkrdSQimG3aMBcBmCqaiwhsH', //'B8pRALyxDgt4l5nRLOYVPoIm1', // Mnotify
+        from : sender, //electa , evotebot
         to : phone,
         content : msg,
     }
-    //const url = `http://clientlogin.bulksmsgh.com/smsapi?key=${data.key}&to=${escape(data.to)}&msg=${data.content}&sender_id=${data.from}`
-    const url = `https://apps.mnotify.net/smsapi?key=${data.key}&to=${data.to}&msg=${data.content}&sender_id=${data.from}`
+    const url = `http://clientlogin.bulksmsgh.com/smsapi?key=${data.key}&to=${escape(data.to)}&msg=${data.content}&sender_id=${data.from}`
+    //const url = `https://apps.mnotify.net/smsapi?key=${data.key}&to=${data.to}&msg=${data.content}&sender_id=${data.from}`
     const options = {
        method: 'get',
        url: encodeURI(url),
@@ -20,6 +20,6 @@ module.exports = async function(phone,msg) {
     const res = await axios(options)
     const resp = await res.data
     //console.log(resp);
-    return resp // mnotify
-    //return {code:resp} // bulksmgh
+    //return resp // mnotify
+    return {code:resp} // bulksmgh
 };

@@ -151,8 +151,8 @@ export default function Centres({setPage}: any) {
                    <button onClick={() => loadVoters(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-slate-500 bg-slate-500 text-white border border-white'>{ !activity[row.id] ? 'LOAD':'STAGING...'}</button>
                    <button onClick={() => loadPhotos(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-slate-500 bg-slate-500 text-white border border-white'><TbPlus className="font-bold" /><span>PHOTO</span></button>
                    */}
-                   <button onClick={() => resetElections(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-red-700 bg-red-700 text-white border border-white'><span>SEND DATA</span></button>
-                   <button onClick={() => sendData(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-red-700 bg-red-700 text-white border border-white'><span>RESET</span></button>
+                   <button onClick={() => sendData(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-yellow-700 bg-yellow-700 text-white border border-white'><span>SEND DATA</span></button>
+                   <button onClick={() => resetElections(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-red-700 bg-red-700 text-white border border-white'><span>RESET</span></button>
                    
                </div>
             </span>

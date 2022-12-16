@@ -183,15 +183,19 @@ module.exports = {
     const { data: en } = await db.from('eb_voter').select(`*`).eq('centre_id', id)
     if (en && en.length > 0) {
       for (var es of en) {
-        // Generate Password
-        const password = es.password ? es.password : `${Math.random() * 1000}`
-        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote !`
-        // Send SMS
-        const sms_status = await sms(es.phone, msg)
-        console.log(sms_status)
-        if( sms_status == 1000 ) count += 1
-        // Update SMS Status 
-        await db.from('eb_voter').update({ sms_status, password }).eq('id', es.id)
+        if (!es.sms_status || es.sms_status != 1000) {
+          // Generate Password
+          const password = es.password ? es.password : `${Math.random() * 1000}`
+          const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote!`
+          const phone = es.phone[0] == '0' ? es.phone : `0${es.phone}`
+          const sender = `eVote`
+          // Send SMS
+          const sms_status = await sms(phone, msg, sender)
+          console.log(sms_status, phone, msg, sender)
+          if (sms_status.code == 1000) count += 1
+          // Update SMS Status 
+          await db.from('eb_voter').update({ sms_status: sms_status.code, password }).eq('id', es.id)
+        }
       }
     } return count;
   },
@@ -202,12 +206,12 @@ module.exports = {
     if (en && en.length > 0) {
       for (var es of en) {
         // Generate Password
-        const password = es.password ? es.password : `${Math.random() * 1000}`
-        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote !`
+        const password = es.password ? es.password : `${Math.random() * 10000}`
+        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote!`
         // Send SMS
         const sms_status = await sms(es.phone, msg)
         console.log(sms_status)
-        if( sms_status == 1000 ) count += 1
+        if (sms_status.code == 1000) count += 1
         // Update SMS Status 
         await db.from('eb_voter').update({ sms_status, password }).eq('id', es.id)
       }
