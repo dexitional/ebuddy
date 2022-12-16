@@ -3,6 +3,7 @@ import https from 'https'
 import fs from 'fs';
 import { getImage } from "../../utils/apiClient";
 import db from '../../supabase'
+import sms from '../config/sms'
 //export const db = require('../../supabase');
 
 module.exports = {
@@ -171,13 +172,59 @@ module.exports = {
     return res;
   },
 
-
-
   loadCentrePhotos: async (cid: string) => {
     var res;
     return res;
   },
 
+  sendCrendentials: async (id: string) => {
+    console.log("working")
+    var count = 0;
+    const { data: en } = await db.from('eb_voter').select(`*`).eq('centre_id', id)
+    if (en && en.length > 0) {
+      for (var es of en) {
+        // Generate Password
+        const password = es.password ? es.password : `${Math.random() * 1000}`
+        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote !`
+        // Send SMS
+        const sms_status = await sms(es.phone, msg)
+        console.log(sms_status)
+        if( sms_status == 1000 ) count += 1
+        // Update SMS Status 
+        await db.from('eb_voter').update({ sms_status, password }).eq('id', es.id)
+      }
+    } return count;
+  },
+
+  sendToVoter: async (id: string) => {
+    var count = 0;
+    const { data: en } = await db.from('eb_voter').select(`*`).eq('id', id)
+    if (en && en.length > 0) {
+      for (var es of en) {
+        // Generate Password
+        const password = es.password ? es.password : `${Math.random() * 1000}`
+        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote !`
+        // Send SMS
+        const sms_status = await sms(es.phone, msg)
+        console.log(sms_status)
+        if( sms_status == 1000 ) count += 1
+        // Update SMS Status 
+        await db.from('eb_voter').update({ sms_status, password }).eq('id', es.id)
+      }
+    } return count;
+  },
+
+  fetchRegister: async (id: string) => {
+    // Voters data
+    //var res = await db.query("select * from eb_election where id = " + id);
+    var { data: res } = await db.from('eb_election').select('*').eq('id', id)
+    if (res && res.length > 0) {
+      //var voters = await db.query("select v.*,ifnull(ev.vote_status,0) as voted from eb_voter v left join eb_elector ev on (v.tag = ev.tag and ev.election_id = "+id+") where v.centre_id = " + res[0].centre_id);
+      var { data: voters } = await db.from('eb_voter').select(`*,voted:vote_status`).eq('centre_id', id)
+      return { ...(res && res[0]), electors: voters };
+    }
+    return null;
+  },
 
 
   fetchElectionByCentre: async (cid: string) => {
@@ -280,7 +327,7 @@ module.exports = {
     const { data: res4 } = await db.from('eb_elector').select('*').eq('election_id', mid)
     if (res4 && res4.length > 0) data.electors = res4;
     console.log(data)
-    
+
     return data;
   },
 
@@ -307,18 +354,6 @@ module.exports = {
     return { ...data, selections };
   },
 
-
-  fetchRegister: async (id: string) => {
-    // Voters data
-    //var res = await db.query("select * from eb_election where id = " + id);
-    var { data: res } = await db.from('eb_election').select('*').eq('id', id)
-    if (res && res.length > 0) {
-      //var voters = await db.query("select v.*,ifnull(ev.vote_status,0) as voted from eb_voter v left join eb_elector ev on (v.tag = ev.tag and ev.election_id = "+id+") where v.centre_id = " + res[0].centre_id);
-      var { data: voters } = await db.from('eb_voter').select(`*,voted:vote_status`).eq('centre_id', id)
-      return { ...(res && res[0]), electors: voters };
-    }
-    return null;
-  },
 
   postVoteData: async (data: any) => {
     const { id, tag, votes, name } = data;

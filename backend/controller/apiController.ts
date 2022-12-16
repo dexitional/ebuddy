@@ -372,6 +372,28 @@ export default {
         .json({ success: false, data: null, msg: "Please Check settings!" });
     }
   },
+
+  sendToVoter:  async (req:NextApiRequest, res:NextApiResponse) => {
+    try {
+      const { sendvoter } = req.query
+      var data = await API.sendToVoter(sendvoter);
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+  
   /* CANDIDATES */
   /* PORTFOLIOS */
 
@@ -439,6 +461,29 @@ export default {
         .json({ success: false, data: null, msg: "Please Check settings!" });
     }
   },
+
+  
+  sendCrendentials:  async (req:NextApiRequest, res:NextApiResponse) => {
+    try {
+      const { sendvoters } = req.query
+      var data = await API.sendCrendentials(sendvoters);
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
 
   resetCentreElections:  async (req:NextApiRequest, res:NextApiResponse) => {
     try {

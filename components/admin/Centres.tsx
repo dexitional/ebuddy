@@ -10,7 +10,7 @@ import axios from 'axios';
 import Router, { useRouter } from 'next/router'
 import Notiflix from 'notiflix'
 import moment from 'moment'
-import { activateCentre, fetchCentres, fetchRegister, fetchVoters, loadCentre, loadPhoto, resetCentreElections, setupVoters } from '../../utils/apiClient'
+import { activateCentre, fetchCentres, fetchRegister, fetchVoters, loadCentre, loadPhoto, resetCentreElections, sendCredentials, setupVoters } from '../../utils/apiClient'
 //import Logo from '../../public/loader.gif'
 
 const data = [];
@@ -85,6 +85,18 @@ export default function Centres({setPage}: any) {
   }
 
   
+  const sendData = async (id:string) => {
+    const ok = window.confirm("SEND VOTERS CREDENTIALS ?")
+    if(ok){
+      const res  = await sendCredentials(id)
+      if(res.success){
+        Notiflix.Notify.success('CRENDENTIALS SENT !');
+        loadCentres()
+      }
+    }
+  }
+
+  
 
   const onChange = (e:any) => {
     e.preventDefault();
@@ -135,9 +147,12 @@ export default function Centres({setPage}: any) {
                <div className="flex items-center justify-center space-x-1 flex-wrap sm:flex-nowrap">
                    { row.default == 0 && (<button onClick={() => setCentre(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded ring-1 ring-slate-600 bg-slate-600 text-white border border-white'>SET ACTIVE</button>)}
                    { row.default == 1 && (<span className='flex items-center justify-center px-2 p-0.5 rounded border border-green-900 font-bold text-[10px] text-green-900'>ACTIVE</span>) }
+                   {/*
                    <button onClick={() => loadVoters(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-slate-500 bg-slate-500 text-white border border-white'>{ !activity[row.id] ? 'LOAD':'STAGING...'}</button>
                    <button onClick={() => loadPhotos(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-slate-500 bg-slate-500 text-white border border-white'><TbPlus className="font-bold" /><span>PHOTO</span></button>
-                   <button onClick={() => resetElections(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-red-700 bg-red-700 text-white border border-white'><span>RESET</span></button>
+                   */}
+                   <button onClick={() => resetElections(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-red-700 bg-red-700 text-white border border-white'><span>SEND DATA</span></button>
+                   <button onClick={() => sendData(row.id)} className='text-[10px] font-bold flex items-center justify-center px-2 py-0 rounded-sm ring-1 ring-red-700 bg-red-700 text-white border border-white'><span>RESET</span></button>
                    
                </div>
             </span>

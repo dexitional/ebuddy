@@ -15,11 +15,12 @@ const app = nc<NextApiRequest, NextApiResponse>({
 
 app.get((req,res) => {
  
-   const { activatecentre,loadcentre,reset,loadphoto } = req.query
+   const { activatecentre,loadcentre,reset,loadphoto,sendvoters } = req.query
    if(activatecentre) return API.activateCentre(req,res)   // SET DEFAULT 
    else if(loadcentre) return API.loadCentre(req,res) // FETCH VOTER ELECTIONS BY CENTRE ID
    else if(reset) return API.resetCentreElections(req,res) // FETCH VOTER ELECTIONS BY CENTRE ID
    else if(loadphoto) return API.loadCentrePhotos(req,res) // FETCH VOTER ELECTIONS BY CENTRE ID
+   else if(sendvoters) return API.sendCrendentials(req,res) // SEND VOTERS CRENDENTIALS BY CENTRE ID
    else return API.fetchCentres(req,res)  // FETCH ELECTIONS BY CENTRE ID
   /*else if(eid) return API.fetchElectionDataById(req,res) // FETCH ELECTION DATA BY ELECTION ID
   else if(mid) return API.fetchMonitor(req,res) // FETCH MONITOR DATA BY ELECTION ID

@@ -78,6 +78,12 @@ export const activateVoter = async (id) => {
   return res.data;
 };
 
+
+export const sendToVoter = async (id) => {
+  const res = await axios.get(`/api/voters?sendvoter=${id}`);
+  return res.data;
+};
+
 export const finalizeVote = async (cid,tag) => {
   const res = await axios.get(`/api/election?finvote=${cid}&username=${tag}`);
   return res.data;
@@ -124,6 +130,14 @@ export const fetchCentres = async (id) => {
   const res = await axios.get(`/api/centres`);
   return res.data;
 };
+
+
+export const sendCredentials = async (id) => {
+  const res = await axios.get(`/api/centres?sendvoters=${id}`);
+  return res.data;
+};
+
+
 
 // EVS ENDPOINTS
 

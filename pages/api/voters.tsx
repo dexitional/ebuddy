@@ -15,10 +15,10 @@ const app = nc<NextApiRequest, NextApiResponse>({
 
 app.get((req,res) => {
  
-   const {verify } = req.query
+   const {verify,sendvoter } = req.query
   if(verify) return API.activateVoter(req,res)  // FETCH ELECTIONS BY CENTRE ID
-   /*else if(cid) return API.fetchElectionByCentre(req,res) // FETCH VOTER ELECTIONS BY CENTRE ID
-  else if(eid) return API.fetchElectionDataById(req,res) // FETCH ELECTION DATA BY ELECTION ID
+  else if(sendvoter) return API.sendToVoter(req,res) // FETCH VOTER ELECTIONS BY CENTRE ID
+  /*else if(eid) return API.fetchElectionDataById(req,res) // FETCH ELECTION DATA BY ELECTION ID
   else if(mid) return API.fetchMonitor(req,res) // FETCH MONITOR DATA BY ELECTION ID
   else if(rid) return API.fetchReceipt(req,res) // FETCH BALLOT DATA BY ELECTION ID
   else if(gid) return API.fetchRegister(req,res) // FETCH BALLOT DATA BY ELECTION ID

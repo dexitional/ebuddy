@@ -197,8 +197,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
                 className={`w-5 h-5 my-1 rounded-full shadow-xs border-2 border-slate-300 ${
                   pageview == i ? "bg-slate-500" : "bg-slate-200"
                 }`}
-                key={i}
-              >
+                key={i}>
                 &nbsp;
               </span>
             ))}
