@@ -114,15 +114,13 @@ export default function Centres({setPage}: any) {
 
   return (
     <>
-    <PagerNew onChange={onChange} onSubmit={onSubmit} keyword={keyword} count={data.length}  />
+    <PagerNew onChange={onChange} onSubmit={onSubmit} keyword={keyword} count={data.length} back={()=> setPage('list')} />
     <Table
         header={
         <div className="gap-y-1 gap-x-3 grid grid-cols-4 text-center">
             <span className="col-span-2 text-left font-semibold">NAME</span>
             <span className="col-span-1 font-semibold">DEFAULT</span>
-            <span className="col-span-1 font-semibold">
-               <button onClick={()=> setPage('list')} className="p-1 px-2 w-16 inline-block border border-blue-900 bg-slate-50 text-blue-900 text-xs uppercase font-medium rounded"><b>BACK</b></button> 
-            </span>
+            <span className="col-span-1 font-semibold">ACTIONS</span>
         </div>
         }>
 
@@ -130,9 +128,6 @@ export default function Centres({setPage}: any) {
             { data?.filter((r:any) => r.name.toLowerCase().includes(keyword.toLowerCase()) || r.tag.toLowerCase().includes(keyword.toLowerCase()))?.map(( row:any, i:React.Key ) => (
             <React.Fragment key={i}>
             <span className="col-span-2 font-bold text-left flex flex-row space-x-4">
-              <a href={`/api/photos/?tag=centre&eid=${row.tag}`} target="_blank  ">
-                 <img src={`/api/photos/?tag=centre&eid=${row.tag}`} className="h-10 rounded border" />
-              </a>
               <span>{row.name} ELECTION CENTRE <em className="block text-blue-900 font-semibold">{row.tag}</em></span>
             </span>
             <span className={`${row.default == 1 && 'text-lg text-green-600 rounded  flex items-center justify-center'} col-span-1 text-center font-bold`}>{ row.default == 1 ? 'YES':'NO' }</span>

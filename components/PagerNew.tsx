@@ -4,7 +4,7 @@ import SearchBox from './SearchBox'
 import {MdAddCircleOutline,MdKeyboardArrowRight,MdKeyboardArrowLeft} from 'react-icons/md'
 import { useUserStore } from '../utils/store';
 
-export default function PagerNew({onChange,onSubmit,keyword }: any) {
+export default function PagerNew({onChange,onSubmit,keyword,back = null }: any) {
     const router = useRouter()
 
     const prevPage = () => {
@@ -26,6 +26,9 @@ export default function PagerNew({onChange,onSubmit,keyword }: any) {
             </button>
             */}
             <div className="flex space-x-1">
+                <button onClick={back}  className="rounded bg-yellow-50 text-slate-600 text-xs font-semibold border border-slate-300">
+                   <span className="px-3 h-6 w-6  font-bold text-slate-600">BACK</span>
+                </button>
                 <button onClick={prevPage} className="rounded bg-green-50 text-slate-600 text-xs border border-slate-300">
                    <MdKeyboardArrowLeft className="h-6 w-6 text-slate-600" />
                 </button>
