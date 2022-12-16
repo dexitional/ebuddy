@@ -1,13 +1,9 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   images: {
     domains: ['localhost'],
     loader: "akamai",
     path: "/",
-  },
-  serverRuntimeConfig: {
-    PROJECT_ROOT: __dirname
   }
-  
 }

@@ -34,7 +34,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
 
   const getChartData = (name: string) => {
     var data = [["Candidate", "Votes"]];
-    const dm = chartData?.filter((r: any) => r.portfolio == name);
+    const dm = chartData?.filter((r: any) => r.portfolio.name == name);
     if (dm && dm.length > 0) {
       const dmx = dm
         ?.filter((r: any) => r.votes > 0)
@@ -90,7 +90,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
       ],
       
     };
-    const dm = chartData?.filter((r: any) => r.portfolio == name);
+    const dm = chartData?.filter((r: any) => r.portfolio.name == name);
     if (dm && dm.length > 0) {
       const dmx = dm
         ?.filter((r: any) => r.votes > 0)
@@ -144,18 +144,18 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
   };
 
   useEffect(() => {
-    syncData()
+    //syncData()
     monitorNow();
   }, []);
 
   useEffect(() => {
     evsdata.candidates && setChartData(evsdata.candidates);
     const timer = setInterval(() => syncData(), 10000);
-    changeView();
+    //changeView();
 
     return () => {
       clearInterval(timer);
-    };
+    }
   }, [evsdata]);
 
   useEffect(() => {
@@ -168,7 +168,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
         <div className={styles.main2}>
           <h3 className="w-full flex items-center justify-between text-2xl font-bold text-slate-500 text-center">
             <span>{evsdata?.name}</span>
-            <div className="px-0.5 h-16 rounded-full bg-slate-50 flex items-center justify-center">
+            <div className="hidden px-0.5 h-16 rounded-full bg-slate-50 items-center justify-center">
               <img src={`/api/photos/?tag=logo&eid=${logo}`} className="h-16 object-cover opacity-70 rounded"/>
             </div>
           </h3>
@@ -176,7 +176,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
       </div>
 
       <div className={styles.wrapper}>
-        <div className={styles.stats}>
+        <div className={styles.stats}>{pageview} {evsdata.portfolios?.length}
             <span className=" px-10 py-1 text-xl font-bold text-slate-600 bg-slate-50 rounded-full shadow-xs border-2 border-slate-300">
               TURNOUT: <span className="font-extrabold text-yellow-700">{electors?.length || evsdata.electors?.length || 0}</span>
             </span>
@@ -212,7 +212,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
               </h2>
               <div className="flex flex-col ">
                 <div className="my-1 pb-2 flex flex-col items-start justify-center border-dotted border-b-2 border-slate-100">
-                  {false && chartData && (
+                  {chartData && (
                     <Chart
                       key={i}
                       chartType="PieChart"
@@ -224,11 +224,11 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
                    
                   )}
 
-                  {chartData && (
+                  {/*false && chartData && (
                   <Doughnut
                     data={getChartDataOffline(row.name)}
                   />
-                  )}
+                  )*/}
                   
                 </div>
               </div>
