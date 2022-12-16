@@ -322,7 +322,8 @@ module.exports = {
     if (res1 && res1.length > 0) data.portfolios = res1;
     // Candidate data
     //var res2 = await db.query("select c.*,p.name as portfolio,p.id as pid from eb_candidate c left join eb_portfolio p on c.portfolio_id = p.id where c.status = 1 and p.election_id = " +mid);
-    const { data: res2 } = await db.from('eb_candidate').select(`*, portfolio:eb_portfolio(name),pid:portfolio_id`).eq('status', 1).eq('eb_portfolio.election_id', mid)
+    const { data: res2, error } = await db.from('eb_candidate').select(`*, portfolio:eb_portfolio(name),pid:portfolio_id`).eq('status', 1).eq('eb_portfolio.election_id', mid)
+    console.log(res2, error)
     if (res2 && res2.length > 0) data.candidates = res2;
     // Election data
     //var res3 = await db.query("select e.* from eb_election e where e.id = "+mid);
@@ -352,7 +353,7 @@ module.exports = {
       if (candidates) {
         for (const candid of candidates) {
           //var cs = await db.query("select c.*,p.name as portfolio from eb_candidate c left join eb_portfolio p on c.portfolio_id = p.id where p.election_id = " +rid +" and c.id = " +candid);
-          var { data: cs } = await db.from('eb_candidate').select(`*,portfolio:eb_portfolio(name)`).eq('election_id', rid).eq('id', candid)
+          var { data: cs } = await db.from('eb_candidate').select(`*,portfolio:eb_portfolio(name)`).eq('eb_portfolio.election_id', rid).eq('id', candid)
           if (cs && cs.length > 0) selections.push(cs[0]);
         }
       }

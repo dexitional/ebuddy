@@ -34,20 +34,12 @@ const PaperEvsResult = () => {
   const syncData = async () => {
     const resp = await fetchMonitor(eid);
     if (resp.success) {
+      setEvsdata({ ...resp.data, id: eid });
       resp.data.electors && setElectors(resp.data.electors);
     }
   };
 
-  const voteNow = async () => {
-    const resp = await fetchMonitor(eid);
-    console.log(resp)
-    if (resp.success) {
-      setEvsdata({ ...resp.data, id: eid });
-    }
-  };
-
   useEffect(() => {
-    voteNow();
     syncData();
   }, []);
 
@@ -89,12 +81,13 @@ const PaperEvsResult = () => {
                       OFFICE OF THE ELECTORAL COMMISSIONER
                     </h2>
                   </div>
-                  <img
+                  {/*<img
                     className="w-40 h-40 p-3 rounded-md border-t-8 border-blue-300 shadow-lg fit-contain"
                     src={`${API_URL}/photos/evs/?tag=logo&eid=${
                       evsdata && evsdata.id
                     }`}
                   />
+                  */}
                 </header>
                 <table className="w-full overflow-hidden">
                   {evsdata &&

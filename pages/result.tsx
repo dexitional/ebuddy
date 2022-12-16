@@ -20,7 +20,7 @@ const PaperResult = () => {
     return (
       evsdata &&
       evsdata.candidates &&
-      evsdata?.candidates.filter((r: any) => r.portfolio == name)
+      evsdata?.candidates.filter((r: any) => r.portfolio.name == name)
     );
   };
 
@@ -111,19 +111,23 @@ const PaperResult = () => {
                               {getPortfolio(row.name) &&
                                 getPortfolio(row.name)
                                   .sort((a: any, b: any) => b.votes - a.votes)
-                                  .map((r: any, j: any) => (
+                                  .map((r: any, j: any) => 
+                                    r.name.toLowerCase() != 'skip' ? 
+                                    j == 0 ? 
+                                    (
                                     <div className="my-2 w-56 overflow-hidden rounded-md border-2 border-blue-900">
                                       <img
-                                        src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                        //src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                        src={`/upload/2022/${r.photo_id}.jpg`}
                                         className="w-full h-52 object-cover object-top"
                                       />
-                                      <div className="p-2 bg-blue-900 text-white text-center font-semibold">
+                                      <div className="p-2 bg-green-800 text-white text-center font-semibold">
                                         <h3 className="text-center print:truncate">
                                           {r.name}
                                         </h3>
-                                        <h4 className="m-2 px-1 py-1.5 rounded-md bg-slate-200/90 text-blue-900 text-lg text-bold flex flex-row items-center justify-center space-x-3">
+                                        <h4 className="m-2 px-1 py-1.5 rounded-md bg-slate-200/90 text-green-900 text-lg text-bold flex flex-row items-center justify-center space-x-3">
                                           <b>{r.votes}</b>{" "}
-                                          <em className="mx-2 px-2 p-0.5 bg-blue-900 text-white text-bold text-sm rounded">
+                                          <em className="mx-2 px-2 p-0.5 bg-green-900 text-white text-bold text-sm rounded">
                                             {(
                                               (parseInt(r.votes) /
                                                 electors.length) *
@@ -134,7 +138,33 @@ const PaperResult = () => {
                                         </h4>
                                       </div>
                                     </div>
-                                  ))}
+                                    ):
+                                    (
+                                      <div className="my-2 w-56 overflow-hidden rounded-md border-2 border-blue-900">
+                                        <img
+                                          //src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                          src={`/upload/2022/${r.photo_id}.jpg`}
+                                          className="w-full h-52 object-cover object-top"
+                                        />
+                                        <div className="p-2 bg-blue-900 text-white text-center font-semibold">
+                                          <h3 className="text-center print:truncate">
+                                            {r.name}
+                                          </h3>
+                                          <h4 className="m-2 px-1 py-1.5 rounded-md bg-slate-200/90 text-blue-900 text-lg text-bold flex flex-row items-center justify-center space-x-3">
+                                            <b>{r.votes}</b>{" "}
+                                            <em className="mx-2 px-2 p-0.5 bg-blue-900 text-white text-bold text-sm rounded">
+                                              {(
+                                                (parseInt(r.votes) /
+                                                  electors.length) *
+                                                100
+                                              ).toFixed(1)}
+                                              %
+                                            </em>
+                                          </h4>
+                                        </div>
+                                      </div>
+                                      ): null
+                                  )}
                             </div>
                           </td>
                         </tr>

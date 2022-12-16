@@ -24,7 +24,7 @@ export default function Result({setPage}: any) {
     return (
       evsdata &&
       evsdata.candidates &&
-      evsdata?.candidates.filter((r: any) => r.portfolio == name)
+      evsdata?.candidates.filter((r: any) => r.portfolio.name == name)
     );
   };
 
@@ -109,33 +109,26 @@ export default function Result({setPage}: any) {
     return count == vcount;
   };
 
-  const syncData = async () => {
-    const resp = await fetchMonitor(eid);
-    console.log(resp);
-    if (resp.success) {
-      resp.data.electors && setElectors(resp.data.electors);
-    }
-  };
 
   const voteNow = async () => {
     const resp = await fetchMonitor(eid);
     if (resp.success) {
        setEvsdata({ ...resp.data, name: ename, id: eid });
+       resp.data.electors && setElectors(resp.data.electors);
     }
   };
 
   useEffect(() => {
     voteNow();
-    syncData();
+    console.log(evsdata)
   }, []);
 
   useEffect(() => {
     //changeView();
   }, [pageview]);
-
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper}>{JSON.stringify(evsdata)}
         <div className={styles.main2}>
           <h3 className="text-lg font-bold text-slate-500 text-center">
             <span>{evsdata?.name}</span>
