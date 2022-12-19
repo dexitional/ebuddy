@@ -148,6 +148,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
     monitorNow();
   }, []);
 
+  /*
   useEffect(() => {
     evsdata.candidates && setChartData(evsdata.candidates);
     const timer = setInterval(() => syncData(), 10000);
@@ -157,7 +158,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
       clearInterval(timer);
     }
   }, [evsdata]);
-
+*/
   
   useEffect(() => {
     changeView();

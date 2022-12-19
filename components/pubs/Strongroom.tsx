@@ -56,7 +56,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
 
   const changeView = () => {
     setTimeout(() => {
-      const index = (pageview + 1) % (evsdata.portfolios?.length || 0);
+      const index = (pageview + 1) % evsdata.portfolios?.length || 0;
       setPageview(index);
     }, 5000);
   };
@@ -75,6 +75,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
     monitorNow();
   }, []);
 
+  
   useEffect(() => {
     evsdata.candidates && setChartData(evsdata.candidates);
     const timer = setInterval(() => { syncData() }, 10000);
@@ -84,9 +85,11 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
       clearInterval(timer);
     }
   }, [evsdata]);
+  /**/
 
   useEffect(() => {
     changeView();
+    console.log(pageview)
   }, [pageview]);
 
   return (
