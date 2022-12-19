@@ -130,7 +130,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
 
   const changeView = () => {
     setTimeout(() => {
-      const index = (pageview + 1) % evsdata.portfolios?.length;
+      const index = (pageview + 1) % (evsdata.portfolios?.length || 0);
       setPageview(index);
     }, 5000);
   };
@@ -144,7 +144,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
   };
 
   useEffect(() => {
-    //syncData()
+    syncData()
     monitorNow();
   }, []);
 
@@ -158,10 +158,12 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
     }
   }, [evsdata]);
 
+  
   useEffect(() => {
     changeView();
   }, [pageview]);
 
+  /**/
   return (
     <>
       <div className={styles.wrapper}>
@@ -176,7 +178,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
       </div>
 
       <div className={styles.wrapper}>
-        <div className={styles.stats}>{pageview} {evsdata.portfolios?.length}
+        <div className={styles.stats}>
             <span className=" px-10 py-1 text-xl font-bold text-slate-600 bg-slate-50 rounded-full shadow-xs border-2 border-slate-300">
               TURNOUT: <span className="font-extrabold text-yellow-700">{electors?.length || evsdata.electors?.length || 0}</span>
             </span>

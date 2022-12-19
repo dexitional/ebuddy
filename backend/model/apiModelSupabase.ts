@@ -231,7 +231,7 @@ module.exports = {
         console.log(ev)
         // Generate Password
         const password = `${Math.round(Math.random() * 1000000)}`
-        const dm = { ...dt, password, descriptor: 'ESIAMA-NMTC', voted: 0, verified: 1, centre_id: 1 }
+        const dm = { ...dt, tag: dt.tag?.toUpperCase()?.replaceAll(' ', ''), name: dt.name?.toUpperCase()?.replaceAll('  ', ' '), password, descriptor: 'ESIAMA-NMTC', voted: 0, verified: 1, centre_id: 1 }
 
         if (!ev) {
           // Insert Voter if not Present
