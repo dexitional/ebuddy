@@ -77,7 +77,11 @@ export default function VoterLogin() {
                             <input autoComplete='off' placeholder="Password" type="text" name="password" onChange={onChange} className="py-2 px-4 w-full border text-gray-700 font-medium  placeholder:text-gray-500 placeholder:font-normal border-gray-400/90 rounded-[5px] outline-none" />
                             <button onClick={authenticate} disabled={loading} className="py-3 px-4 w-full bg-blue-900/90 text-white text-md font-medium rounded-[5px]" type="submit">{loading ? 'authenticating ...':'Log In'}</button>
                         </div>
-                        <Link href="/public"><span className="hidden mt-4 text-[10px] font-semibold text-center text-red-900/90 hover:underline decoration-red-900/90 cursor-pointer">Monitor Elections Now!</span></Link>
+                        <div className="flex space-x-2 items-center justify-center">
+                        <Link href="/public"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">Monitor Elections</span></Link>
+                        <Link href="/vvip"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">Goto Strongroom</span></Link>
+                        <Link href="/result"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">View Results</span></Link>
+                        </div>
                         <span className="mt-4 text-[10px] font-semibold text-center text-blue-900/90 hover:underline decoration-blue-900/90 cursor-default">Copyright &copy; K-Soft GH {new Date().getFullYear()}</span>
                     
                     </form>
