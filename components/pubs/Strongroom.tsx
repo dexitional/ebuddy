@@ -31,13 +31,13 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
     return (
       evsdata &&
       evsdata.candidates &&
-      evsdata?.candidates.filter((r: any) => r.portfolio == name)
+      evsdata?.candidates.filter((r: any) => r.portfolio.name == name)
     );
   };
    
   const getChartData = (name: string) => {
     var data = [["Candidate", "Votes"]];
-    const dm = chartData?.filter((r: any) => r.portfolio == name);
+    const dm = chartData?.filter((r: any) => r.portfolio.name == name);
     if (dm && dm.length > 0) {
       const dmx = dm
         ?.filter((r: any) => r.votes > 0)
@@ -56,7 +56,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
 
   const changeView = () => {
     setTimeout(() => {
-      const index = (pageview + 1) % evsdata.portfolios?.length;
+      const index = (pageview + 1) % (evsdata.portfolios?.length || 0);
       setPageview(index);
     }, 5000);
   };
@@ -77,15 +77,12 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
 
   useEffect(() => {
     evsdata.candidates && setChartData(evsdata.candidates);
-    const timer = setInterval(() => {
-      syncData()
-      monitorNow()
-    }, 10000);
-    changeView();
+    const timer = setInterval(() => { syncData() }, 10000);
+    //changeView();
 
     return () => {
       clearInterval(timer);
-    };
+    }
   }, [evsdata]);
 
   useEffect(() => {
@@ -98,7 +95,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
         <div className={styles.main2}>
           <h3 className="w-full flex items-center justify-between text-2xl font-bold text-slate-500 text-center">
             <span>{evsdata?.name}</span>
-            <div className="px-0.5 h-16 rounded-full bg-slate-50 flex items-center justify-center">
+            <div className="px-0.5 h-16 rounded-full bg-slate-50 hidden items-center justify-center">
               <img src={`/api/photos/?tag=logo&eid=${logo}`} className="h-16 object-cover opacity-70 rounded"/>
             </div>
           </h3>
@@ -167,7 +164,8 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
                           <div className="my-1 pb-2 flex flex-row items-start justify-between border-dotted border-b-2 border-slate-100">
                             <div className="my-2 pb-4 flex flex-row items-start space-x-6 ">
                               <img
-                                src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                //src={`/api/photos/?tag=candid&eid=${r.id}`}
+                                src={`/upload/2022/${r.photo_id}.jpg`}
                                 alt={r.name}
                                 loading="lazy"
                                 className="h-24 w-22 p-2 border border-1 border-slate-200 rounded-md"
