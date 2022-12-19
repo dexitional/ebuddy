@@ -26,7 +26,7 @@ module.exports = {
       var { data: res } = await db
         .from('eb_voter')
         .select(`*`)
-        .eq('tag', username)
+        .eq('tag', username?.toUpperCase())
         .eq('password', password)
         .eq('centre_id', centre[0].id || 0).single();
       if (res) return res;
@@ -219,6 +219,36 @@ module.exports = {
       }
     } return count;
   },
+
+  loadVoters: async () => {
+    var count = 0;
+    const data = require('../data.json')
+    if (data && data.length > 0) {
+      for (const dt of data) {
+        //console.log(dt)
+        // Check whether voter exists
+        const { data: ev } = await db.from('eb_voter').select(`*`).eq('tag', dt.tag).single()
+        console.log(ev)
+        // Generate Password
+        const password = `${Math.round(Math.random() * 1000000)}`
+        const dm = { ...dt, password, descriptor: 'ESIAMA-NMTC', voted: 0, verified: 1, centre_id: 1 }
+
+        if (!ev) {
+          // Insert Voter if not Present
+          const { data: ins, error }: any = await db.from('eb_voter').insert(dm).select()
+          console.log(ins, error)
+          if (ins?.status === 200) count += 1
+        } else {
+          // Insert Voter if not Present
+          const { data: ups, error }: any = await db.from('eb_voter').update(dm).eq('id', ev.id).select()
+          console.log(ups, error)
+          if (ups?.status === 200) count += 1
+        }
+      }
+    } return count;
+  },
+
+
 
   fetchRegister: async (id: string) => {
     // Voters data
