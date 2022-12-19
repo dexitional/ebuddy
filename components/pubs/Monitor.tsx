@@ -130,7 +130,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
 
   const changeView = () => {
     setTimeout(() => {
-      const index = (pageview + 1) % (evsdata.portfolios?.length || 0);
+      const index = ((pageview + 1) % evsdata.portfolios?.length || 0) || 0;
       setPageview(index);
     }, 5000);
   };
@@ -148,20 +148,27 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
     monitorNow();
   }, []);
 
-  /*
+  
   useEffect(() => {
     evsdata.candidates && setChartData(evsdata.candidates);
     const timer = setInterval(() => syncData(), 10000);
-    //changeView();
+    changeView();
 
     return () => {
       clearInterval(timer);
     }
   }, [evsdata]);
-*/
+
   
   useEffect(() => {
-    changeView();
+    const timer = setTimeout(() => {
+      const index = ((pageview + 1) % evsdata.portfolios?.length || 0) || 0;
+      setPageview(index);
+    }, 5000);
+    
+    return () => {
+      clearTimeout(timer)
+    }
   }, [pageview]);
 
   /**/

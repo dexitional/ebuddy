@@ -56,7 +56,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
 
   const changeView = () => {
     setTimeout(() => {
-      const index = (pageview + 1) % evsdata.portfolios?.length || 0;
+      const index = ((pageview + 1) % evsdata.portfolios?.length || 0) || 0;
       setPageview(index);
     }, 5000);
   };
@@ -79,7 +79,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
   useEffect(() => {
     evsdata.candidates && setChartData(evsdata.candidates);
     const timer = setInterval(() => { syncData() }, 10000);
-    //changeView();
+    changeView();
 
     return () => {
       clearInterval(timer);
@@ -88,7 +88,14 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
   /**/
 
   useEffect(() => {
-    changeView();
+    const timer = setTimeout(() => {
+      const index = ((pageview + 1) % evsdata.portfolios?.length || 0) || 0;
+      setPageview(index);
+    }, 5000);
+    
+    return () => {
+      clearTimeout(timer)
+    }
     console.log(pageview)
   }, [pageview]);
 
@@ -98,9 +105,6 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
         <div className={styles.main2}>
           <h3 className="w-full flex items-center justify-between text-2xl font-bold text-slate-500 text-center">
             <span>{evsdata?.name}</span>
-            <div className="px-0.5 h-16 rounded-full bg-slate-50 hidden items-center justify-center">
-              <img src={`/api/photos/?tag=logo&eid=${logo}`} className="h-16 object-cover opacity-70 rounded"/>
-            </div>
           </h3>
         </div>
       </div>
