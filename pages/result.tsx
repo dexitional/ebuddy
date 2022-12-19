@@ -3,6 +3,7 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import { fetchMonitor } from "../utils/apiClient";
 import { useUserStore } from "../utils/store";
+import { GiVote } from 'react-icons/gi'
 
 const styles = {
   wrapper: `w-full p-2 bg-white rounded-lg border border-slate-100`,
@@ -85,12 +86,8 @@ const PaperResult = () => {
                       OFFICE OF THE ELECTORAL COMMISSIONER
                     </h2>
                   </div>
-                  <img
-                    className="w-40 h-40 p-3 rounded-md border-t-8 border-blue-300 shadow-lg fit-contain"
-                    src={`/api/photos/?tag=logo&eid=${
-                      evsdata && evsdata.id
-                    }`}
-                  />
+                  
+                  <GiVote className="w-40 h-40 p-3 rounded-md border-t-8 text-blue-900 border-blue-300 shadow-lg fit-contain" />
                 </header>
                 <table className="w-full overflow-hidden">
                   {evsdata &&
@@ -100,22 +97,23 @@ const PaperResult = () => {
                         <tr>
                           <td className="h-4">&nbsp;</td>
                         </tr>
-                        <tr className="bg-blue-900 ring-8 ring-blue-900 border-4 border-white mt-4 break-before-page">
+                        <tr className="bg-blue-900 ring-8 ring-blue-900 border-4 border-white mt-4">
                           <td className="p-3 text-white font-semibold text-center text-3xl tracking-widest">
                             <h3>{row.name}</h3>
                           </td>
                         </tr>
                         <tr className="body">
-                          <td>
+                          <td className="relative">
+                            <div className="absolute -top-[4rem] left-10 my-3 flex flex-wrap items-center justify-center"><span className="pl-3 py-1 bg-slate-50/90 border rounded text-blue-900 font-bold italic">SKIPPED VOTES <span className="mx-2 text-red-800">100 - 0.0%</span></span></div>
                             <div className="my-3 flex flex-wrap items-center justify-center space-x-3">
                               {getPortfolio(row.name) &&
                                 getPortfolio(row.name)
                                   .sort((a: any, b: any) => b.votes - a.votes)
                                   .map((r: any, j: any) => 
                                     r.name.toLowerCase() != 'skip' ? 
-                                    j == 0 ? 
+                                    (j == 0 )  ? 
                                     (
-                                    <div className="my-2 w-56 overflow-hidden rounded-md border-2 border-blue-900">
+                                    <div className="my-2 w-56 overflow-hidden rounded-md border-2 border-green-800">
                                       <img
                                         //src={`/api/photos/?tag=candid&eid=${r.id}`}
                                         src={`/upload/2022/${r.photo_id}.jpg`}
