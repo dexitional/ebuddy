@@ -297,7 +297,9 @@ module.exports = {
       const et = await db.query(sql);
       */
       const { data: et } = search ?
-        await db.from('eb_voter').select(`*`).like('tag', '%"+search+"%').like('name', '%"+search+"%').limit(10)
+        //await db.from('eb_voter').select(`*`).ilike('tag', `%${search}%`)
+        //await db.from('eb_voter').select(`*`).or(`or(name.ilike.%${search}%,tag.ilike.%${search}%),or(email.ilike.%$search_term%,account.ilike.%$search_term%)`)
+        await db.from('eb_voter').select(`*`).or(`or(name.ilike.%${search}%,tag.ilike.%${search}%)`)
         : await db.from('eb_voter').select(`*`).eq('centre_id', ct[0].id)
       if (et && et.length > 0) return et;
     }
