@@ -6,6 +6,7 @@ import { fetchMonitor } from "../../utils/apiClient";
 import { useUserStore } from "../../utils/store";
 import { chartColors } from "../../utils/colors";
 import type { ChartData, ChartOptions } from 'chart.js'
+import Router from "next/router";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const styles = {
@@ -172,6 +173,8 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
   }, [pageview]);
 
   /**/
+  console.log(evsdata)
+  if(evsdata && evsdata?.election && evsdata.election[0].allow_monitor == 0) Router.back()
   return (
     <>
       <div className={styles.wrapper}>
