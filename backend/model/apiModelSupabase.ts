@@ -433,7 +433,6 @@ module.exports = {
                 }
               }
             }
-            console.log(count, update_count)
             if (count != update_count) {
               throw new Error(`Votes partially received`);
               //return { success: false, msg: 'Votes partially recorded', code: 1001 }
@@ -449,7 +448,7 @@ module.exports = {
             };
             //const ins = await db.query("insert into eb_elector set ?", dm);
             //if (ins && ins.insertId > 0) {
-
+            await db.from('eb_log').insert({ tag, election_id: id, meta: Object.values(votes).join(",") }).eq('id', val).select()
             const { data: ins, error }: any = await db.from('eb_elector').insert(dm).select()
             if (ins && ins.length > 0) {
               return { success: true, msg: "Voted successfully", code: 1000 };

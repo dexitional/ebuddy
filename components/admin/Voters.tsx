@@ -92,7 +92,7 @@ export default function Voters({setPage}: any) {
 
             <div className={`col-span-1 sm:text-xs font-bold flex flex-col space-y-1 text-center sm:text-left sm:flex-row space-x-4`}>
               <span className="flex items-center justify-center sm:hidden w-full rounded bg-slate-100 text-gray-600  font-bold">VOTE STATUS</span>
-              <span>{ row.voted == 1 ? 'VOTED':'NOT VOTED' }</span>
+              <span className="text-xs font-medium italic">{ row.voted == 1 ? 'VOTED':'NOT VOTED' }</span>
             </div>
            
             <div className="col-span-1 flex flex-col sm:flex-row space-x-4">
@@ -101,7 +101,7 @@ export default function Voters({setPage}: any) {
                    { row.sms_status !== 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded bg-blue-900 text-white border border-white '>SEND</button>)}
                </div>
             </div>
-            <div className="my-2 w-full border-b-2 border-dashed border-blue-900"></div>
+              <div className="sm:hidden my-2 w-full border-b-2 border-dashed border-blue-900"></div>
             </React.Fragment>
         ))}
         </div>
