@@ -510,6 +510,44 @@ module.exports = {
     }
   },
 
+  syncVoteData2: async () => {
+    try {
+      //var { data: res } = await db.from('eb_elector').select('*')
+      const res = require('./voted.json')
+      var mdata: any = {}
+      if (res && res.length > 0) {
+        //await db.from('eb_candidate').update({ votes2: 0 })
+        for (const vs of res) {
+          const votes = vs.vote_sum.split(",")
+          if (votes && votes.length > 0) {
+            for (const vm of votes) {
+              if (mdata[vm]) {
+                mdata[vm] += 1
+              } else {
+                mdata[vm] = 1
+              }
+              console.log(mdata[vm])
+              // const { data: vc }: any = await db.from('eb_candidate').select("votes2").eq('id', vm.trim()).single()
+              // const { data: rm } = await db.from('eb_candidate').update({ votes2: (vc.votes2 + 1) }).eq('id', vm.trim()).select()
+              // console.log(rm)
+            }
+          }
+        }
+      }
+
+      for (const [key, value] of Object.entries(mdata)) {
+        const { data: rm } = await db.from('eb_candidate').update({ votes: value }).eq('id', key).select()
+        console.log(rm)
+      }
+    } catch (e: any) {
+      return {
+        success: false,
+        msg: e.message,
+        code: 1004,
+      };
+    }
+  },
+
   updateControl: async (id: string, data: any) => {
     /*const sql = "update eb_election set ? where id = " + id;
     const res = await db.query(sql, data);*/

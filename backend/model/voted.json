@@ -1,0 +1,3215 @@
+[
+    {
+        "id": 198,
+        "tag": "CHNTCESRCN200052",
+        "name": "PATRICIA ACQUAH AKOMANING",
+        "vote_time": "2022-12-20 18:41:23.023",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 203,
+        "tag": "CHNTCESNAP210074",
+        "name": "VICTORIA EGUAKUN",
+        "vote_time": "2022-12-20 18:41:42.315",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 209,
+        "tag": "CHNTCESNAP210067",
+        "name": "TRACY QUAICOE",
+        "vote_time": "2022-12-20 18:42:35.273",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,22,27,32,34,37,38,41,43,46,49,52,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 46,
+        "tag": "CHNTCESPNM190021",
+        "name": "SARAH ADU",
+        "vote_time": "2022-12-20 17:03:20.155",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 47,
+        "tag": "CHNTCESPNM210023",
+        "name": "ESTHER TAWIAH",
+        "vote_time": "2022-12-20 17:03:42.59",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 48,
+        "tag": "CHNTCESPNM210015",
+        "name": "ELIZABETH ANARFO",
+        "vote_time": "2022-12-20 17:04:15.621",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 49,
+        "tag": "CHNTCESPNM210016",
+        "name": "GLADYS DENTEH",
+        "vote_time": "2022-12-20 17:05:00.619",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 50,
+        "tag": "CHNTCESPNM210021",
+        "name": "JUSTINA SIMPSON",
+        "vote_time": "2022-12-20 17:05:16.338",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,20,25,23,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 51,
+        "tag": "CHNTCESPNM210041",
+        "name": "RUTH NKRUMAH",
+        "vote_time": "2022-12-20 17:06:13.689",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 52,
+        "tag": "CHNTCESPNM210032",
+        "name": "LOUISA SAM ACKOSSEY",
+        "vote_time": "2022-12-20 17:06:38.506",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 53,
+        "tag": "CHNTCESPNM210033",
+        "name": "JOYCE ALLESAH",
+        "vote_time": "2022-12-20 17:06:55.285",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 54,
+        "tag": "CHNTCESPNM210030",
+        "name": "MARY AGYEKUMWAA OFOSU",
+        "vote_time": "2022-12-20 17:06:55.574",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,23,27,32,34,36,38,40,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 55,
+        "tag": "CHNTCESPNM210043",
+        "name": "ABIGAIL OFORI",
+        "vote_time": "2022-12-20 17:07:22.048",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 56,
+        "tag": "CHNTCESPNM210040",
+        "name": "DORIS AMOAFO",
+        "vote_time": "2022-12-20 17:07:35.925",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,19,25,23,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 57,
+        "tag": "CHNTCESPNM210036",
+        "name": "LINDA ASIAMAH",
+        "vote_time": "2022-12-20 17:07:39.971",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 58,
+        "tag": "CHNTCESPNNM210002",
+        "name": "HALFICER QUAINOO",
+        "vote_time": "2022-12-20 17:09:06.376",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 59,
+        "tag": "CHNTCESPNM210003",
+        "name": "GRACE SERWAA ELLIS",
+        "vote_time": "2022-12-20 17:09:15.695",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 60,
+        "tag": "CHNTCESPNM210008",
+        "name": "DIANA AGYEMANG",
+        "vote_time": "2022-12-20 17:09:55.795",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 61,
+        "tag": "CHNTCESPNM210042",
+        "name": "GIFTY MAVIS ARTHUR",
+        "vote_time": "2022-12-20 17:10:56.302",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 62,
+        "tag": "CHNTCESPNM210019",
+        "name": "ESTHER ACQUAH",
+        "vote_time": "2022-12-20 17:11:26.938",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 63,
+        "tag": "CHNTCESPNM210020",
+        "name": "JENNIFER AMA NSTIFUL",
+        "vote_time": "2022-12-20 17:11:51.262",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,20,25,22,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 64,
+        "tag": "CHNTCESPNM210005",
+        "name": "PEACE LARDI ASAMPANA",
+        "vote_time": "2022-12-20 17:11:52.511",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 65,
+        "tag": "CHNTCESPNM210004",
+        "name": "BENEDICTA YANKEY",
+        "vote_time": "2022-12-20 17:12:20.131",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 66,
+        "tag": "CHNTCESPNM210012",
+        "name": "FREDERICA APPREY",
+        "vote_time": "2022-12-20 17:13:03.633",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 67,
+        "tag": "CHNTCESPNM210039",
+        "name": "EUODIA GYIMAH",
+        "vote_time": "2022-12-20 17:13:05.982",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 68,
+        "tag": "CHNTCESPNM210028",
+        "name": "JOSEPHINE CUDJOE",
+        "vote_time": "2022-12-20 17:14:06.683",
+        "vote_status": 1,
+        "vote_sum": "1,4,5,9,12,14,16,20,25,22,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 69,
+        "tag": "CHNTCESPNM210026",
+        "name": "HANNAH BULU",
+        "vote_time": "2022-12-20 17:15:30.885",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 70,
+        "tag": "CHNTCESPNM210017",
+        "name": "ESTHER POMAA WIAFE",
+        "vote_time": "2022-12-20 17:16:05.978",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,20,25,22,27,32,34,36,38,41,44,46,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 71,
+        "tag": "CHNTCESPNM210007",
+        "name": "NANA ESI AYENSU",
+        "vote_time": "2022-12-20 17:16:07.328",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 72,
+        "tag": "CHNTCESPNM210009",
+        "name": "AGARTHA TWUMWAA",
+        "vote_time": "2022-12-20 17:16:08.319",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,40,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 73,
+        "tag": "CHNTCESPNM210044",
+        "name": "GOGLOMI AKU REBECCA",
+        "vote_time": "2022-12-20 17:17:33.862",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 74,
+        "tag": "CHNTCESPNM210010",
+        "name": "MARGARET SAM ASARE",
+        "vote_time": "2022-12-20 17:18:03.304",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 75,
+        "tag": "CHNTCESPNM210025",
+        "name": "FLORENCE ANDOH",
+        "vote_time": "2022-12-20 17:18:30.592",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,40,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 76,
+        "tag": "CHNTCESPNNM210001",
+        "name": "FELICIA AKUA ANIWAH ASSOAH",
+        "vote_time": "2022-12-20 17:18:46.243",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 77,
+        "tag": "CHNTCESPNM210037",
+        "name": "GRACE SAFOWAH ASAMOAH",
+        "vote_time": "2022-12-20 17:19:48.441",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 78,
+        "tag": "CHNTCESPNM210024",
+        "name": "MILLICENT KWAKYEWAAH ADDOM",
+        "vote_time": "2022-12-20 17:20:33.814",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,19,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 79,
+        "tag": "CHNTCESPNM210013",
+        "name": "FELICIA BALINNE",
+        "vote_time": "2022-12-20 17:24:48.703",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 80,
+        "tag": "CHNTCESPNM210034",
+        "name": "ESTHER AKASI KOFI",
+        "vote_time": "2022-12-20 17:25:07.398",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 81,
+        "tag": "CHNTCESPNM210031",
+        "name": "GLADYS AKPULLEY",
+        "vote_time": "2022-12-20 17:25:16.843",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 82,
+        "tag": "CHNTCESPNM210029",
+        "name": "SAHADATU HARUNA",
+        "vote_time": "2022-12-20 17:26:31.672",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 83,
+        "tag": "CHNTCESPNM210022",
+        "name": "GIFTY TIMOLIJO",
+        "vote_time": "2022-12-20 17:28:58.46",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 84,
+        "tag": "CHNTCESPNM210038",
+        "name": "MERCY ARTHUR",
+        "vote_time": "2022-12-20 17:30:49.725",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,20,25,23,27,32,34,36,38,40,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 86,
+        "tag": "CHNTCESNAP210033",
+        "name": "PRISCILLA  BAIDEN",
+        "vote_time": "2022-12-20 17:30:56.902",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 88,
+        "tag": "CHNTCESRCN200038",
+        "name": "MARGARET ASARE",
+        "vote_time": "2022-12-20 17:31:00.313",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,14,17,19,25,23,28,32,34,37,38,40,43,46,49,52,54,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 91,
+        "tag": "CHNTCESRCN200073",
+        "name": "PATSY EWURABENA ASANTEWAA FORDJOUR",
+        "vote_time": "2022-12-20 17:31:31.106",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 92,
+        "tag": "CHNTCESRCN200031",
+        "name": "BARBARA BENSON TANDOH",
+        "vote_time": "2022-12-20 17:34:12.813",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 93,
+        "tag": "CHNTCESRCN200097",
+        "name": "SANDRA APPIAH",
+        "vote_time": "2022-12-20 17:34:29.589",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 200,
+        "tag": "CHNTCESRCN200098",
+        "name": "DORCAS ADDY",
+        "vote_time": "2022-12-20 18:41:28.302",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,20,25,23,27,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 102,
+        "tag": "CHNTCESPHN210069",
+        "name": "PHILOMENA SIMPSON",
+        "vote_time": "2022-12-20 17:40:54.984",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,19,25,22,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 104,
+        "tag": "CHNTCESNAP210085",
+        "name": "ELIZABETH ACKAH",
+        "vote_time": "2022-12-20 18:07:37.382",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 106,
+        "tag": "CHNTCESRCN200014",
+        "name": "DEBORAH ANLIMAH",
+        "vote_time": "2022-12-20 18:20:29.55",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,15,17,19,25,23,28,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 109,
+        "tag": "CHNTCESNAP210127",
+        "name": "PRISCILLA DANSO AGYAPONG",
+        "vote_time": "2022-12-20 18:21:24.771",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,22,28,32,34,37,38,41,43,46,50,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 111,
+        "tag": "CHNTCESRCN200053",
+        "name": "FELICIA AKORLI HLORGBE",
+        "vote_time": "2022-12-20 18:27:48.405",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 113,
+        "tag": "CHNTCESRCN200007",
+        "name": "ANGELA BAIDOO",
+        "vote_time": "2022-12-20 18:30:42.548",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 114,
+        "tag": "CHNTCESPHN210009",
+        "name": "CLAUDIA VIFA ARTHUR",
+        "vote_time": "2022-12-20 18:30:49.508",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,13,14,17,19,25,23,28,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 204,
+        "tag": "CHNTCESNAP210015",
+        "name": "ESTHER  ARTHUR",
+        "vote_time": "2022-12-20 18:41:54.86",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 121,
+        "tag": "CHNTCESNAP210111",
+        "name": "MARIAM  OFORI",
+        "vote_time": "2022-12-20 18:33:14.456",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,33,35,37,39,41,44,48,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 205,
+        "tag": "CHNTCESNAP210059",
+        "name": "EMMANUELLA EFUA USHER",
+        "vote_time": "2022-12-20 18:42:04.214",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,7,13,15,18,21,25,24,28,32,34,37,39,42,45,46,50,51,55,56,31,60",
+        "election_id": 1
+    },
+    {
+        "id": 207,
+        "tag": "CHNTCESNAP210038",
+        "name": "AUGUSTINA ESHUN",
+        "vote_time": "2022-12-20 18:42:26.825",
+        "vote_status": 1,
+        "vote_sum": "1,4,6,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 208,
+        "tag": "CHNTCESPHN210136",
+        "name": "ISAIAH NYAME",
+        "vote_time": "2022-12-20 18:42:29.15",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,11,14,17,19,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 214,
+        "tag": "CHNTCESNAP210123",
+        "name": "ABIGAIL MILLS",
+        "vote_time": "2022-12-20 18:42:49.913",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,13,15,18,20,25,23,28,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 220,
+        "tag": "CHNTCESRCN200044",
+        "name": "ROSEMOND MENSAH",
+        "vote_time": "2022-12-20 18:43:25.222",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 226,
+        "tag": "CHNTCESNAP210114",
+        "name": "FELICIA HOMEDZIE",
+        "vote_time": "2022-12-20 18:43:29.949",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,7,11,15,17,20,25,23,28,32,34,37,38,41,44,46,50,51,55,57,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 231,
+        "tag": "CHNTCESNAP210061",
+        "name": "BOYE EUNICE SERWAA",
+        "vote_time": "2022-12-20 18:43:42.727",
+        "vote_status": 1,
+        "vote_sum": "1,4,6,7,12,14,16,20,25,22,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 232,
+        "tag": "CHNTCESNAP210076",
+        "name": "SARAH MENSAH",
+        "vote_time": "2022-12-20 18:43:44.217",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,28,32,34,37,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 234,
+        "tag": "CHNTCESPHN210057",
+        "name": "PHILOMENA AGYIR",
+        "vote_time": "2022-12-20 18:44:04.886",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,43,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 236,
+        "tag": "CHNTCESRCN200108",
+        "name": "VICTORIA KYEREMAAH",
+        "vote_time": "2022-12-20 18:44:14.877",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,23,28,32,34,37,38,40,44,47,50,51,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 243,
+        "tag": "CHNTCESRCN200126",
+        "name": "FRANCISCA  OBENG",
+        "vote_time": "2022-12-20 18:45:06.606",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 246,
+        "tag": "CHNTCESPHN210014",
+        "name": "SALAMAT AZIZ",
+        "vote_time": "2022-12-20 18:45:20.568",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 250,
+        "tag": "CHNTCESRCN200074",
+        "name": "HUMAISA ABUBAKAR",
+        "vote_time": "2022-12-20 18:45:39.229",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 251,
+        "tag": "CHNTCESRCN200077",
+        "name": "ESTHER KONANE EBOYI",
+        "vote_time": "2022-12-20 18:45:43.582",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,15,18,19,25,24,28,32,34,37,38,40,45,48,50,53,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 256,
+        "tag": "CHNTCESRCN200063",
+        "name": "LETICIA ASEIDU AVORKPO",
+        "vote_time": "2022-12-20 18:46:28.989",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 258,
+        "tag": "CHNTCESNAP210081",
+        "name": "BELMENDA ESI COBBINAH",
+        "vote_time": "2022-12-20 18:46:35.224",
+        "vote_status": 1,
+        "vote_sum": "1,4,6,7,12,14,17,20,26,24,28,33,35,37,38,41,44,46,50,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 259,
+        "tag": "CHNTCESPHN210017",
+        "name": "KATE TAKYIWAAH OWUSU",
+        "vote_time": "2022-12-20 18:46:44.498",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,23,28,32,35,37,38,41,44,47,50,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 261,
+        "tag": "CHNTCESNAP210024",
+        "name": "EMMANUELLA KOOMSON",
+        "vote_time": "2022-12-20 18:46:58.205",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,22,28,32,34,36,38,41,43,47,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 271,
+        "tag": "CHNTCESNAP210104",
+        "name": "RASHIDATU YUSSIF",
+        "vote_time": "2022-12-20 18:48:46.793",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,7,13,15,16,20,25,23,28,32,34,37,38,41,45,47,49,51,55,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 273,
+        "tag": "CHNTCESRCN200078",
+        "name": "ERIC ACKOM",
+        "vote_time": "2022-12-20 18:49:00.875",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 280,
+        "tag": "CHNTCESPHN210047",
+        "name": "HELENA YEBOAH-AWUAH",
+        "vote_time": "2022-12-20 18:49:17.421",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 287,
+        "tag": "CHNTCESPHN210086",
+        "name": "ANGELA DZIDJO KWAME-BOI",
+        "vote_time": "2022-12-20 18:49:39.264",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,43,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 293,
+        "tag": "CHNTCESRCN200012",
+        "name": "WASILATU ALHASSAN",
+        "vote_time": "2022-12-20 18:50:24.059",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,17,19,25,22,28,32,34,37,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 301,
+        "tag": "CHNTCESRCN200006",
+        "name": "VINCENTIA AFFUL",
+        "vote_time": "2022-12-20 18:51:34.768",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,12,15,17,19,25,23,27,32,34,37,38,40,43,46,50,52,55,58,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 302,
+        "tag": "CHNTCESPHN210032",
+        "name": "GIFTY KAINYAH",
+        "vote_time": "2022-12-20 18:51:39.919",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,14,17,19,25,23,27,32,34,37,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 310,
+        "tag": "CHNTCESPHN210024",
+        "name": "PORTIA  NINIWAA",
+        "vote_time": "2022-12-20 18:52:49.557",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 312,
+        "tag": "CHNTCESNAP210128",
+        "name": "MAVIS  ASANTE",
+        "vote_time": "2022-12-20 18:52:51.347",
+        "vote_status": 1,
+        "vote_sum": "2,4,5,7,12,15,16,20,25,23,28,33,35,37,39,41,43,46,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 315,
+        "tag": "CHNTCESNAP210099",
+        "name": "FULERA MOHAMMED",
+        "vote_time": "2022-12-20 18:53:04.179",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,16,20,25,22,28,32,35,37,39,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 317,
+        "tag": "CHNTCESRCN200059",
+        "name": "RUTH ACQUAH",
+        "vote_time": "2022-12-20 18:53:16.833",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 318,
+        "tag": "CHNTCESNAP210109",
+        "name": "REJOICE DZAMESHIE",
+        "vote_time": "2022-12-20 18:53:34.512",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,13,15,18,21,25,23,28,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 320,
+        "tag": "CHNTCESPHN210055",
+        "name": "ANTHONY ROCKSON",
+        "vote_time": "2022-12-20 18:54:39.234",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,11,14,17,19,25,22,27,32,34,36,38,41,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 94,
+        "tag": "CHNTCESPHN210044",
+        "name": "ANTHOINETTE SOWAH",
+        "vote_time": "2022-12-20 17:34:37.327",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,20,25,22,27,32,34,36,38,40,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 99,
+        "tag": "CHNTCESPNM210018",
+        "name": "FREMPONG PRISCILLA",
+        "vote_time": "2022-12-20 17:40:12.398",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 100,
+        "tag": "CHNTCESNAP210046",
+        "name": "ALBERTA ODOOM",
+        "vote_time": "2022-12-20 17:40:21.447",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 110,
+        "tag": "CHNTCESRCN200115",
+        "name": "AMDELATU DRAMANI",
+        "vote_time": "2022-12-20 18:27:42.214",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,14,17,19,25,23,28,32,34,37,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 120,
+        "tag": "CHNTCESRCN200132",
+        "name": "ELVIS ASANTE",
+        "vote_time": "2022-12-20 18:33:08.764",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 202,
+        "tag": "CHNTCESNAP210005",
+        "name": "HENRIETTA JACKLYNE ACKAH",
+        "vote_time": "2022-12-20 18:41:39.165",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,13,14,16,21,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 206,
+        "tag": "CHNTCESRCN200008",
+        "name": "JUDITH ARABA QUAYE",
+        "vote_time": "2022-12-20 18:42:20.819",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 213,
+        "tag": "CHNTCESPHN210040",
+        "name": "JULIANA BORHOH",
+        "vote_time": "2022-12-20 18:42:49.461",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 217,
+        "tag": "CHNTCESRCN200009",
+        "name": "GRACE DUKU AFFUL",
+        "vote_time": "2022-12-20 18:43:09.209",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 225,
+        "tag": "CHNTCESNAP210112",
+        "name": "JESSICA ATANGAH",
+        "vote_time": "2022-12-20 18:43:27.503",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,18,20,25,24,28,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 227,
+        "tag": "CHNTCESRCN200121",
+        "name": "ESTHER MAWUENA TORKU",
+        "vote_time": "2022-12-20 18:43:32.976",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 228,
+        "tag": "CHNTCESPHN210115",
+        "name": "EDMOND OSEI ASARE",
+        "vote_time": "2022-12-20 18:43:36.467",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 229,
+        "tag": "CHNTCESNAP210119",
+        "name": "AISHA  IBRAHIM",
+        "vote_time": "2022-12-20 18:43:39.748",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,26,22,28,33,35,37,39,41,45,48,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 237,
+        "tag": "CHNTCESNAP210036",
+        "name": "HANNAH BASHIR",
+        "vote_time": "2022-12-20 18:44:20.597",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,25,23,28,32,34,36,39,41,44,46,49,51,55,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 238,
+        "tag": "CHNTCESRCN200016",
+        "name": "GEORGINA ENTSIE",
+        "vote_time": "2022-12-20 18:44:21.184",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 239,
+        "tag": "CHNTCESNAP210060",
+        "name": "AGNES PIETERSON MENSAH",
+        "vote_time": "2022-12-20 18:44:25.673",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,13,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 242,
+        "tag": "CHNTCESRCN200113",
+        "name": "GODDY ADU BOAHEN",
+        "vote_time": "2022-12-20 18:44:36.822",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 247,
+        "tag": "CHNTCESPHN210020",
+        "name": "JULIET ASSUAH MIEZAH",
+        "vote_time": "2022-12-20 18:45:24.007",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,12,14,17,19,25,23,27,32,34,37,38,41,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 248,
+        "tag": "CHNTCESNAP210010",
+        "name": "JANET DICKSON",
+        "vote_time": "2022-12-20 18:45:27.464",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,22,28,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 252,
+        "tag": "CHNTCESRCN200107",
+        "name": "VIVIAN ADU",
+        "vote_time": "2022-12-20 18:45:58.57",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 260,
+        "tag": "CHNTCESRCN200122",
+        "name": "RUTH LARTEY",
+        "vote_time": "2022-12-20 18:46:45.649",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 262,
+        "tag": "CHNTCESNAP210079",
+        "name": "GEORGE  BED JNR",
+        "vote_time": "2022-12-20 18:47:16.719",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,43,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 274,
+        "tag": "CHNTCESPHN210122",
+        "name": "POKUAAH MERCY",
+        "vote_time": "2022-12-20 18:49:11.234",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 321,
+        "tag": "CHNTCESPHN210103",
+        "name": "MARTHA OBENG",
+        "vote_time": "2022-12-20 18:55:03.62",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 325,
+        "tag": "CHNTCESRCN200040",
+        "name": "MERCY ENYONAM FRANCE",
+        "vote_time": "2022-12-20 18:55:29.361",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 326,
+        "tag": "CHNTCESNAP210101",
+        "name": "TENE KONATE ADAM",
+        "vote_time": "2022-12-20 18:55:33.809",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,7,13,15,17,20,25,23,28,33,34,37,38,41,43,46,50,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 328,
+        "tag": "CHNTCESNAP210110",
+        "name": "PORTIA AKLATEY",
+        "vote_time": "2022-12-20 18:56:33.239",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,23,28,33,35,37,39,41,43,46,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 330,
+        "tag": "CHNTCESPHN210083",
+        "name": "GIFTY OFOSUA",
+        "vote_time": "2022-12-20 18:56:34.086",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,13,14,18,21,25,22,28,32,34,36,38,40,43,48,49,51,54,58,31,60",
+        "election_id": 1
+    },
+    {
+        "id": 338,
+        "tag": "CHNTCESRCN200116",
+        "name": "SAMUEL MENSAH AFRIM",
+        "vote_time": "2022-12-20 18:57:33.986",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 340,
+        "tag": "CHNTCESRCN200136",
+        "name": "BERNICE COBBOLD NYAMEKYE",
+        "vote_time": "2022-12-20 18:58:10.679",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,20,25,23,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 345,
+        "tag": "CHNTCESNAP210106",
+        "name": "ESTHER ANSAH",
+        "vote_time": "2022-12-20 18:59:25.575",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 355,
+        "tag": "CHNTCESNAP210048",
+        "name": "MILLICENT DANQUAH-QUAINOO",
+        "vote_time": "2022-12-20 19:02:04.191",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 362,
+        "tag": "CHNTCESPHN210006",
+        "name": "HAWAWU KASSIM NUHU",
+        "vote_time": "2022-12-20 19:07:53.955",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,19,25,23,28,32,34,37,38,40,43,47,50,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 363,
+        "tag": "CHNTCESNAP210100",
+        "name": "ABIGAIL ABENA TANDOH",
+        "vote_time": "2022-12-20 19:08:59.912",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 365,
+        "tag": "CHNTCESNAP210018",
+        "name": "AUSTIN GYAMFI",
+        "vote_time": "2022-12-20 19:11:12.737",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,28,32,34,37,38,41,44,46,50,52,55,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 367,
+        "tag": "CHNTCESPHN210013",
+        "name": "SANDRAH FRIMPONG ADJEI",
+        "vote_time": "2022-12-20 19:11:19.521",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 369,
+        "tag": "CHNTCESNAP210063",
+        "name": "ERICA KORANG",
+        "vote_time": "2022-12-20 19:13:12.722",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 96,
+        "tag": "CHNTCESPHN210088",
+        "name": "MARTINA OWUSU",
+        "vote_time": "2022-12-20 17:36:17.11",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 98,
+        "tag": "CHNTCESRCN200084",
+        "name": "CONSTANCE ALASKA",
+        "vote_time": "2022-12-20 17:39:48.486",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 101,
+        "tag": "CHNTCESNAP210124",
+        "name": "SARAH ATTAN",
+        "vote_time": "2022-12-20 17:40:39.992",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 103,
+        "tag": "CHNTCESRCN200041",
+        "name": "LAWRENCIA ACKAH",
+        "vote_time": "2022-12-20 17:45:05.117",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 105,
+        "tag": "CHNTCESRCN190078",
+        "name": "ALLARA EMELIA",
+        "vote_time": "2022-12-20 18:08:49.487",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 107,
+        "tag": "CHNTCESRCN200056",
+        "name": "DIANA WILSON",
+        "vote_time": "2022-12-20 18:20:31.535",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,37,38,40,43,46,50,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 108,
+        "tag": "CHNTCESRCN200017",
+        "name": "HARRIET AIDOO",
+        "vote_time": "2022-12-20 18:21:10.573",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 112,
+        "tag": "CHNTCESRCN200085",
+        "name": "MARY OFORI ANDERSON",
+        "vote_time": "2022-12-20 18:29:29.083",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,16,19,25,23,28,32,34,36,38,40,43,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 115,
+        "tag": "CHNTCESPHN210072",
+        "name": "LAWRENCIA GLADYS SARPOMAA",
+        "vote_time": "2022-12-20 18:31:05.284",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,22,27,32,34,36,38,41,44,47,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 116,
+        "tag": "CHNTCESNAP210031",
+        "name": "REBERTA BERVEL ABOAGYE",
+        "vote_time": "2022-12-20 18:32:10.555",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 117,
+        "tag": "CHNTCESRCN200043",
+        "name": "DORA MISSAH",
+        "vote_time": "2022-12-20 18:32:41.756",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,20,25,23,27,32,34,36,38,40,44,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 119,
+        "tag": "CHNTCESRCN200099",
+        "name": "YANKAH RUTH ALABA ASONG",
+        "vote_time": "2022-12-20 18:33:05.588",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 122,
+        "tag": "CHNTCESRCN200003",
+        "name": "LOUISA TWUMASI ANKRAH",
+        "vote_time": "2022-12-20 18:33:22.03",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 123,
+        "tag": "CHNTCESNAP210073",
+        "name": "GRACE DOUGHAN",
+        "vote_time": "2022-12-20 18:33:45.374",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,23,28,32,34,37,38,41,43,46,49,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 124,
+        "tag": "CHNTCESPNM210027",
+        "name": "MARTHA AKU DZORKPE",
+        "vote_time": "2022-12-20 18:33:49.529",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 125,
+        "tag": "CHNTCESRCN200020",
+        "name": "DORCAS MENSAH",
+        "vote_time": "2022-12-20 18:33:50.425",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,20,25,23,27,32,34,36,38,40,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 126,
+        "tag": "CHNTCESNAP210025",
+        "name": "ANITA KOFIE",
+        "vote_time": "2022-12-20 18:33:54.844",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 127,
+        "tag": "CHNTCESRCN200015",
+        "name": "MARGARET  BENYAWOR",
+        "vote_time": "2022-12-20 18:33:59.066",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 128,
+        "tag": "CHNTCESNAP210042",
+        "name": "DORCAS ADOM KAKU",
+        "vote_time": "2022-12-20 18:34:17.479",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 129,
+        "tag": "CHNTCESPHN210129",
+        "name": "REBECCA LORDINA ASIRIFI",
+        "vote_time": "2022-12-20 18:34:19.993",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,13,14,18,19,25,23,28,32,34,37,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 210,
+        "tag": "CHNTCESRCN200066",
+        "name": "FAUSTINA MANSO FRIMPONG",
+        "vote_time": "2022-12-20 18:42:39.069",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 131,
+        "tag": "CHNTCESRCN200069",
+        "name": "MARGARET ACHIAA",
+        "vote_time": "2022-12-20 18:34:27.92",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 132,
+        "tag": "CHNTCESRCN200058",
+        "name": "BOAMAH RACHEAL YEBOAH",
+        "vote_time": "2022-12-20 18:34:37.635",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 133,
+        "tag": "CHNTCESRCN200030",
+        "name": "ASARE HANNAH",
+        "vote_time": "2022-12-20 18:34:44.011",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 134,
+        "tag": "CHNTCESPHN210085",
+        "name": "ISHMAELLINA EVERLOVE EPHRAIM",
+        "vote_time": "2022-12-20 18:35:04.402",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,13,14,18,21,26,24,28,32,34,36,39,42,45,46,49,51,54,56,31,60",
+        "election_id": 1
+    },
+    {
+        "id": 135,
+        "tag": "CHNTCESNAP210122",
+        "name": "JOSEPHINE SAGOE",
+        "vote_time": "2022-12-20 18:35:30.404",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,22,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 136,
+        "tag": "CHNTCESRCN200010",
+        "name": "RUTH ANGOVI",
+        "vote_time": "2022-12-20 18:35:30.634",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 137,
+        "tag": "CHNTCESRCN200064",
+        "name": "HARRIET DEDE COMBEY",
+        "vote_time": "2022-12-20 18:35:35.701",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,22,28,32,34,37,38,40,44,47,50,52,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 138,
+        "tag": "CHNTCESPHN210028",
+        "name": "CLIFFORD COLLINS GYASI",
+        "vote_time": "2022-12-20 18:36:02.354",
+        "vote_status": 1,
+        "vote_sum": "1,4,5,9,12,14,16,20,25,22,27,32,35,36,38,40,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 139,
+        "tag": "CHNTCESNAP210012",
+        "name": "GILBERT KWAME",
+        "vote_time": "2022-12-20 18:36:16.026",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,25,23,28,32,35,37,38,42,43,46,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 140,
+        "tag": "CHNTCESRCN200054",
+        "name": "VERA SENCHEREY",
+        "vote_time": "2022-12-20 18:36:19.723",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,28,32,34,37,38,40,43,46,50,52,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 141,
+        "tag": "CHNTCESRCN200118",
+        "name": "EMMA GAISIE",
+        "vote_time": "2022-12-20 18:36:22.246",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,16,19,25,24,27,32,34,36,38,40,43,46,49,51,54,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 142,
+        "tag": "CHNTCESRCN200130",
+        "name": "ISAAC KOJO ANSAH",
+        "vote_time": "2022-12-20 18:36:26.334",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,10,13,15,18,19,25,24,28,32,34,37,38,42,45,46,50,53,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 143,
+        "tag": "CHNTCESRCN200129",
+        "name": "ABIGAIL SARFO",
+        "vote_time": "2022-12-20 18:36:44.42",
+        "vote_status": 1,
+        "vote_sum": "2,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 144,
+        "tag": "CHNTCESRCN200068",
+        "name": "DEBORAH QUAYSON",
+        "vote_time": "2022-12-20 18:36:48.024",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 145,
+        "tag": "CHNTCESNAP210043",
+        "name": "ABIGAIL MORRISON",
+        "vote_time": "2022-12-20 18:36:49.357",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,13,14,17,20,25,22,28,33,35,37,39,41,45,48,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 211,
+        "tag": "CHNTCESRCN200011",
+        "name": "RHODA EYIKU",
+        "vote_time": "2022-12-20 18:42:41.459",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,10,11,14,18,19,25,22,28,32,34,37,38,40,43,46,50,51,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 147,
+        "tag": "CHNTCESPHN210141",
+        "name": "ELIZABETH SODANA",
+        "vote_time": "2022-12-20 18:36:57.202",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,37,38,41,44,47,49,52,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 148,
+        "tag": "CHNTCESRCN190060",
+        "name": "ABIGAIL AFIA NEIZER",
+        "vote_time": "2022-12-20 18:37:00.187",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 149,
+        "tag": "CHNTCESPHN210002",
+        "name": "PORTIA ADOBEA  BERKO",
+        "vote_time": "2022-12-20 18:37:00.854",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,22,28,32,34,37,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 150,
+        "tag": "CHNTCESRCN200142",
+        "name": "CELESTINA AMANOKIE NORMOUR",
+        "vote_time": "2022-12-20 18:37:02.241",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,41,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 151,
+        "tag": "CHNTCESNAP210065",
+        "name": "PATIENCE SMITH NKRUMAH",
+        "vote_time": "2022-12-20 18:37:12.307",
+        "vote_status": 1,
+        "vote_sum": "2,4,6,10,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 152,
+        "tag": "CHNTCESPHN210027",
+        "name": "SORTOR NAATUNO JOSEPH",
+        "vote_time": "2022-12-20 18:37:16.348",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 153,
+        "tag": "CHNTCESRCN200076",
+        "name": "BEATRICE ACKAH ERZOAH",
+        "vote_time": "2022-12-20 18:37:16.781",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,16,19,25,22,28,32,34,37,38,40,43,46,50,51,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 212,
+        "tag": "CHNTCESRCN200023",
+        "name": "TAMEKLO BENEDICTA",
+        "vote_time": "2022-12-20 18:42:44.582",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 215,
+        "tag": "CHNTCESNAP210086",
+        "name": "HANNAH PAANA",
+        "vote_time": "2022-12-20 18:42:56.254",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 156,
+        "tag": "CHNTCESRCN200055",
+        "name": "AMEGBOR SEYRAM JOSHUA",
+        "vote_time": "2022-12-20 18:37:25.594",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 157,
+        "tag": "CHNTCESRCN200046",
+        "name": "ESTHER  TAWIAH",
+        "vote_time": "2022-12-20 18:37:26.356",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 216,
+        "tag": "CHNTCESRCN200081",
+        "name": "SUSANA OWARE",
+        "vote_time": "2022-12-20 18:42:58.014",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 159,
+        "tag": "CHNTCESNAP210039",
+        "name": "FELICIAL THERSAH BASSAW",
+        "vote_time": "2022-12-20 18:37:32.539",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 165,
+        "tag": "CHNTCESNAP210009",
+        "name": "COMFORT OBENG",
+        "vote_time": "2022-12-20 18:38:24.822",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 169,
+        "tag": "CHNTCESPHN210079",
+        "name": "GLORIA ARKOH",
+        "vote_time": "2022-12-20 18:38:47.75",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,16,20,25,22,27,32,34,36,38,40,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 170,
+        "tag": "CHNTCESNAP210037",
+        "name": "DORCAS NUAMAH",
+        "vote_time": "2022-12-20 18:38:48.474",
+        "vote_status": 1,
+        "vote_sum": "1,4,6,7,13,15,18,21,25,24,27,32,34,36,39,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 173,
+        "tag": "CHNTCESNAP210004",
+        "name": "NANA ABA FOSUWAH KONDUAH",
+        "vote_time": "2022-12-20 18:39:06.657",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,26,22,28,33,35,37,39,41,45,48,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 177,
+        "tag": "CHNTCESNAP210093",
+        "name": "COMFORT AKOSUA KONADU",
+        "vote_time": "2022-12-20 18:39:42.794",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 180,
+        "tag": "CHNTCESRCN200065",
+        "name": "JOAN QUARMSON",
+        "vote_time": "2022-12-20 18:39:56.177",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 182,
+        "tag": "CHNTCESRCN200047",
+        "name": "SHERIFATU AHMED",
+        "vote_time": "2022-12-20 18:40:14.335",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 187,
+        "tag": "CHNTCESRCN200070",
+        "name": "CLAUDIA ASIAMAH",
+        "vote_time": "2022-12-20 18:40:37.709",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,22,28,32,34,37,38,40,44,46,49,52,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 194,
+        "tag": "CHNTCESPHN210144",
+        "name": "FELICIA  APPIAH",
+        "vote_time": "2022-12-20 18:41:01.159",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,26,22,28,33,35,37,39,41,45,48,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 218,
+        "tag": "CHNTCESRCN200149",
+        "name": "LYDIA ANSOMAA",
+        "vote_time": "2022-12-20 18:43:17.188",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 219,
+        "tag": "CHNTCESNAP210058",
+        "name": "FELICIA DONKOR",
+        "vote_time": "2022-12-20 18:43:19.145",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 224,
+        "tag": "CHNTCESRCN200057",
+        "name": "ASAMOAH MILLICENT",
+        "vote_time": "2022-12-20 18:43:26.191",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 233,
+        "tag": "CHNTCESNAP210028",
+        "name": "HAWA SULLEYMAN",
+        "vote_time": "2022-12-20 18:43:59.477",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 244,
+        "tag": "CHNTCESNAP210126",
+        "name": "GEORGINA NYAMEKYE",
+        "vote_time": "2022-12-20 18:45:09.821",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,28,32,35,37,39,41,44,47,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 249,
+        "tag": "CHNTCESRCN200131",
+        "name": "PAULA ATSUFI AKOSUA BARASU",
+        "vote_time": "2022-12-20 18:45:39.02",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 254,
+        "tag": "CHNTCESRCN200079",
+        "name": "CAROLINE MENSAH",
+        "vote_time": "2022-12-20 18:46:14.988",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 255,
+        "tag": "CHNTCESNAP210092",
+        "name": "JOSEPHINE MENSAH",
+        "vote_time": "2022-12-20 18:46:22.249",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,22,27,32,35,36,38,41,43,47,49,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 257,
+        "tag": "CHNTCESNAP210084",
+        "name": "JOYCE ANYIEM",
+        "vote_time": "2022-12-20 18:46:34.916",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 263,
+        "tag": "CHNTCESNAP210089",
+        "name": "OLIVIA AKOSUA BOAKYEWAA OFORI",
+        "vote_time": "2022-12-20 18:47:20.088",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 264,
+        "tag": "CHNTCESPHN210102",
+        "name": "JENNIFER MENSAH",
+        "vote_time": "2022-12-20 18:47:40.942",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 265,
+        "tag": "CHNTCESNAP210007",
+        "name": "DORIS GYASI",
+        "vote_time": "2022-12-20 18:47:49.812",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 266,
+        "tag": "CHNTCESNAP210017",
+        "name": "ISAAC AMOAH",
+        "vote_time": "2022-12-20 18:48:02.486",
+        "vote_status": 1,
+        "vote_sum": "1,4,5,7,12,14,17,20,25,23,28,32,35,37,39,41,44,47,49,51,54,57,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 268,
+        "tag": "CHNTCESNAP210083",
+        "name": "PAULINA EGYIR",
+        "vote_time": "2022-12-20 18:48:26.14",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 269,
+        "tag": "CHNTCESNAP210066",
+        "name": "EUNICE EMEFA EDZAH",
+        "vote_time": "2022-12-20 18:48:29.702",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 270,
+        "tag": "CHNTCESNAP210069",
+        "name": "JANET  GYAMFI",
+        "vote_time": "2022-12-20 18:48:46.467",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 371,
+        "tag": "CHNTCESNAP210108",
+        "name": "ESTHER NANASIAH MENSAH",
+        "vote_time": "2022-12-20 19:14:39.253",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 379,
+        "tag": "CHNTCESPHN210078",
+        "name": "MAVIS AGYEKUM",
+        "vote_time": "2022-12-20 19:16:09.872",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,11,15,17,19,25,23,27,32,34,36,38,40,44,47,50,51,55,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 380,
+        "tag": "CHNTCESNAP210034",
+        "name": "ANGELA YANKEY",
+        "vote_time": "2022-12-20 19:16:13.754",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,22,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 381,
+        "tag": "CHNTCESNAP210068",
+        "name": "PRISCILLA BAIDOO",
+        "vote_time": "2022-12-20 19:17:31.735",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 383,
+        "tag": "CHNTCESPHN210023",
+        "name": "REUBEN OKYERE ASAMOAH",
+        "vote_time": "2022-12-20 19:17:46.73",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,37,38,40,44,46,50,52,55,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 385,
+        "tag": "CHNTCESNAP210070",
+        "name": "VASHTI EKUA ESSIEN",
+        "vote_time": "2022-12-20 19:18:13.082",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 160,
+        "tag": "CHNTCESPHN210090",
+        "name": "MARY CUDJOE",
+        "vote_time": "2022-12-20 18:37:43.895",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,15,17,19,25,23,28,32,34,37,38,40,43,47,50,51,55,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 161,
+        "tag": "CHNTCESRCN200082",
+        "name": "NAOMI AMANKWAH",
+        "vote_time": "2022-12-20 18:37:45.271",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 162,
+        "tag": "CHNTCESRCN200100",
+        "name": "DOROTHY BOAHEMAA BONSU",
+        "vote_time": "2022-12-20 18:37:55.428",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 281,
+        "tag": "CHNTCESNAP210077",
+        "name": "FRANCISCA AGADJIE",
+        "vote_time": "2022-12-20 18:49:29.837",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 166,
+        "tag": "CHNTCESRCN200001",
+        "name": "GIFTY NYAME NTSIN",
+        "vote_time": "2022-12-20 18:38:27.902",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 167,
+        "tag": "CHNTCESRCN200029",
+        "name": "LADY PEARL DANQUAH",
+        "vote_time": "2022-12-20 18:38:30.286",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,14,17,19,25,22,28,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 174,
+        "tag": "CHNTCESRCN200048",
+        "name": "PETER TAWIAH",
+        "vote_time": "2022-12-20 18:39:15.404",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,24,27,32,34,36,38,40,45,48,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 176,
+        "tag": "CHNTCESPHN210080",
+        "name": "MAVIS  ANKRAH",
+        "vote_time": "2022-12-20 18:39:37.576",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,13,14,17,19,25,22,27,32,34,37,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 181,
+        "tag": "CHNTCESNAP210098",
+        "name": "BARBARA NYARKOWAA MENSAH",
+        "vote_time": "2022-12-20 18:40:12.971",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,16,20,25,22,28,32,34,36,39,41,44,46,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 184,
+        "tag": "CHNTCESRCN200061",
+        "name": "MARTHA AKOMANYIWAA GYAMFI",
+        "vote_time": "2022-12-20 18:40:19.521",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,17,19,25,23,28,32,34,36,38,40,43,47,49,52,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 185,
+        "tag": "CHNTCESPHN210067",
+        "name": "DEBORAH MENSAH",
+        "vote_time": "2022-12-20 18:40:29.711",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,10,11,14,16,19,25,22,27,32,34,37,38,40,43,48,49,51,54,56,31,59",
+        "election_id": 1
+    },
+    {
+        "id": 188,
+        "tag": "CHNTCESPHN210073",
+        "name": "CHRISTABEL ARMAH",
+        "vote_time": "2022-12-20 18:40:38.128",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,16,20,25,22,28,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 193,
+        "tag": "CHNTCESPHN210021",
+        "name": "SAMUEL FOKUO BOATENG",
+        "vote_time": "2022-12-20 18:40:59.056",
+        "vote_status": 1,
+        "vote_sum": "2,3,5,9,11,14,17,19,25,23,27,32,34,36,39,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 195,
+        "tag": "CHNTCESRCN200021",
+        "name": "OLIVIA NYARKU",
+        "vote_time": "2022-12-20 18:41:02.16",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,15,17,19,25,22,28,32,34,37,38,40,43,46,49,51,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 290,
+        "tag": "CHNTCESNAP210051",
+        "name": "RUTH ENNOR",
+        "vote_time": "2022-12-20 18:50:00.95",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 291,
+        "tag": "CHNTCESNAP210118",
+        "name": "GLADYS DONKOH",
+        "vote_time": "2022-12-20 18:50:11.711",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,7,13,15,18,21,25,24,28,32,34,37,38,42,44,47,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 295,
+        "tag": "CHNTCESPHN210133",
+        "name": "SHADRACK AMOAKO",
+        "vote_time": "2022-12-20 18:50:28.53",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,11,14,17,20,25,23,27,32,34,36,38,41,43,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 297,
+        "tag": "CHNTCESPHN210037",
+        "name": "MAVIS TETTEH",
+        "vote_time": "2022-12-20 18:51:04.173",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 298,
+        "tag": "CHNTCESRCN200060",
+        "name": "VIVIAN MENSAH",
+        "vote_time": "2022-12-20 18:51:04.479",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,15,17,19,25,23,28,32,34,36,38,40,44,46,50,52,55,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 303,
+        "tag": "CHNTCESNAP210035",
+        "name": "PHILOMENA  MENSAH",
+        "vote_time": "2022-12-20 18:51:45.647",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 311,
+        "tag": "CHNTCESNAP210102",
+        "name": "LINDA  ACQUAH",
+        "vote_time": "2022-12-20 18:52:50.966",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 316,
+        "tag": "CHNTCESNAP210055",
+        "name": "PRINCESS TORSHIE MENSAH",
+        "vote_time": "2022-12-20 18:53:13.963",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,16,20,26,23,28,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 319,
+        "tag": "CHNTCESNAP210113",
+        "name": "LETICIA MANU",
+        "vote_time": "2022-12-20 18:54:12.165",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,25,23,28,32,34,37,38,41,43,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 323,
+        "tag": "CHNTCESPHN210042",
+        "name": "PRECIOUS AGBOLEGBE",
+        "vote_time": "2022-12-20 18:55:20.634",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 327,
+        "tag": "CHNTCESPHN210108",
+        "name": "ELLEN ODURO",
+        "vote_time": "2022-12-20 18:56:09.073",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,22,28,32,34,37,38,41,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 329,
+        "tag": "CHNTCESNAP210072",
+        "name": "EMMANUELLA GIFTY ABBAN",
+        "vote_time": "2022-12-20 18:56:34.03",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 331,
+        "tag": "CHNTCESPHN210095",
+        "name": "VIDA KOBIAH",
+        "vote_time": "2022-12-20 18:56:34.171",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,40,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 333,
+        "tag": "CHNTCESNAP210062",
+        "name": "EMMANUEL BOTWE",
+        "vote_time": "2022-12-20 18:56:39.885",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,11,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 335,
+        "tag": "CHNTCESNAP210019",
+        "name": "TERBAH  REBECCA",
+        "vote_time": "2022-12-20 18:56:49.24",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,13,14,16,20,25,23,27,32,34,36,39,41,44,46,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 336,
+        "tag": "CHNTCESPHN210065",
+        "name": "ELLIOT NII ABE ABBEY",
+        "vote_time": "2022-12-20 18:56:58.046",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 337,
+        "tag": "CHNTCESRCN200146",
+        "name": "EMMELDA ABENA AYESU-APPIAH",
+        "vote_time": "2022-12-20 18:57:23.012",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 341,
+        "tag": "CHNTCESNAP210095",
+        "name": "MARY  OCRAN",
+        "vote_time": "2022-12-20 18:58:25.038",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,23,28,33,35,37,39,41,45,46,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 352,
+        "tag": "CHNTCESNAP210016",
+        "name": "JULIANA YANKEY",
+        "vote_time": "2022-12-20 19:01:56.852",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,48,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 356,
+        "tag": "CHNTCESNAP210129",
+        "name": "KUMAH DELIGHT",
+        "vote_time": "2022-12-20 19:02:55.804",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,37,38,41,44,47,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 357,
+        "tag": "CHNTCESPHN210041",
+        "name": "LORRETA BOMAH",
+        "vote_time": "2022-12-20 19:05:15.859",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 358,
+        "tag": "CHNTCESNAP210021",
+        "name": "ESTHER ADU",
+        "vote_time": "2022-12-20 19:05:31.571",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 361,
+        "tag": "CHNTCESPNM210035",
+        "name": "RUTH AMAKYE",
+        "vote_time": "2022-12-20 19:07:19.562",
+        "vote_status": 1,
+        "vote_sum": "1,4,5,9,11,14,16,21,25,22,27,32,35,36,38,40,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 364,
+        "tag": "CHNTCESPNM210014",
+        "name": "ERNESTINA ACHEAMPONG",
+        "vote_time": "2022-12-20 19:10:26.329",
+        "vote_status": 1,
+        "vote_sum": "2,3,5,9,12,14,16,20,25,22,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 372,
+        "tag": "CHNTCESNAP210049",
+        "name": "FAUSTINA KAKUCHIE",
+        "vote_time": "2022-12-20 19:14:41.64",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 377,
+        "tag": "CHNTCESNAP210026",
+        "name": "BEATRICE ANSAH",
+        "vote_time": "2022-12-20 19:16:06.739",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 378,
+        "tag": "CHNTCESPHN210001",
+        "name": "ASARE OPOKU LOVE",
+        "vote_time": "2022-12-20 19:16:09.062",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 163,
+        "tag": "CHNTCESRCN200139",
+        "name": "DEBORAH ABA SACKEY",
+        "vote_time": "2022-12-20 18:38:10.061",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,23,28,32,34,37,38,40,44,47,50,52,55,57,29,60",
+        "election_id": 1
+    },
+    {
+        "id": 168,
+        "tag": "CHNTCESRCN200119",
+        "name": "BETTY ABAMBILLAH",
+        "vote_time": "2022-12-20 18:38:34.848",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 171,
+        "tag": "CHNTCESRCN200096",
+        "name": "PERPETUAL MAWUENA HADZIDE",
+        "vote_time": "2022-12-20 18:39:02.997",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 282,
+        "tag": "CHNTCESRCN200013",
+        "name": "EMMANUELA WARD",
+        "vote_time": "2022-12-20 18:49:31.022",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,22,28,32,34,37,38,40,43,46,50,52,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 175,
+        "tag": "CHNTCESNAP210115",
+        "name": "ABIGAIL AFEDZIWA AGYAPONG",
+        "vote_time": "2022-12-20 18:39:23.661",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,25,22,28,32,34,37,38,41,43,46,49,52,54,57,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 178,
+        "tag": "CHNTCESRCN200140",
+        "name": "ABIGAIL AKUA MANU",
+        "vote_time": "2022-12-20 18:39:48.094",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,23,27,32,34,36,38,41,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 179,
+        "tag": "CHNTCESRCN200019",
+        "name": "SANDRA AFRAKOMA",
+        "vote_time": "2022-12-20 18:39:54.615",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,18,19,25,22,28,32,34,37,38,40,43,46,49,53,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 186,
+        "tag": "CHNTCESRCN200075",
+        "name": "ADAVALIC ADAAWEN ABIGAIL",
+        "vote_time": "2022-12-20 18:40:33.15",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 192,
+        "tag": "CHNTCESPHN210011",
+        "name": "WIAFE DANIEL",
+        "vote_time": "2022-12-20 18:40:38.802",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,14,17,19,25,23,28,32,34,37,38,40,44,47,49,51,54,57,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 289,
+        "tag": "CHNTCESPHN210045",
+        "name": "JOSEPHINE OFORI",
+        "vote_time": "2022-12-20 18:49:48.519",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,23,27,32,34,36,38,40,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 292,
+        "tag": "CHNTCESPHN210097",
+        "name": "MARY EGYIN",
+        "vote_time": "2022-12-20 18:50:22.296",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 296,
+        "tag": "CHNTCESPHN210007",
+        "name": "FATIMA MOHAMMED",
+        "vote_time": "2022-12-20 18:50:30.436",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,44,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 304,
+        "tag": "CHNTCESNAP210013",
+        "name": "EBENEZER AKYEN",
+        "vote_time": "2022-12-20 18:51:55.543",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,43,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 305,
+        "tag": "CHNTCESPHN210139",
+        "name": "JOHN DADZIE",
+        "vote_time": "2022-12-20 18:52:00.568",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 306,
+        "tag": "CHNTCESRCN200080",
+        "name": "DELLA YAKUBU",
+        "vote_time": "2022-12-20 18:52:06.3",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,10,11,15,18,19,25,24,28,32,34,37,38,40,43,46,50,53,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 308,
+        "tag": "CHNTCESRCN200091",
+        "name": "JENNIFER  NKUAH",
+        "vote_time": "2022-12-20 18:52:15.545",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 309,
+        "tag": "CHNTCESRCN200027",
+        "name": "GRACE OTOO",
+        "vote_time": "2022-12-20 18:52:19.653",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,15,17,19,25,22,27,32,34,37,38,40,43,46,50,52,55,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 314,
+        "tag": "CHNTCESRCN200137",
+        "name": "BENEDICTA OTABIL",
+        "vote_time": "2022-12-20 18:52:53.856",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,41,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 322,
+        "tag": "CHNTCESPHN210074",
+        "name": "ATIAH GODFRED",
+        "vote_time": "2022-12-20 18:55:18.361",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 334,
+        "tag": "CHNTCESRCN200035",
+        "name": "JOANA DADZIE",
+        "vote_time": "2022-12-20 18:56:46.633",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 343,
+        "tag": "CHNTCESNAP210045",
+        "name": "RAHMATU MUHAMMED",
+        "vote_time": "2022-12-20 18:59:18.514",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 346,
+        "tag": "CHNTCESPHN210070",
+        "name": "EVELYN KOFIE",
+        "vote_time": "2022-12-20 18:59:46.807",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 347,
+        "tag": "CHNTCESRCN200109",
+        "name": "GEORGE ASSOAH",
+        "vote_time": "2022-12-20 19:00:46.862",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 348,
+        "tag": "CHNTCESPHN210043",
+        "name": "EMMANUELLA AKUA ESSIEN",
+        "vote_time": "2022-12-20 19:01:14.358",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 349,
+        "tag": "CHNTCESPHN210128",
+        "name": "FRANCISCA  ACHEAMPONG",
+        "vote_time": "2022-12-20 19:01:29.064",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 351,
+        "tag": "CHNTCESPHN210110",
+        "name": "ROSINA NYAME TEASE",
+        "vote_time": "2022-12-20 19:01:55.746",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 354,
+        "tag": "CHNTCESNAP210044",
+        "name": "ABIGAIL GYEKYE",
+        "vote_time": "2022-12-20 19:02:00.878",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 360,
+        "tag": "CHNTCESPHN210051",
+        "name": "CHARITY OSEI-MENSAH",
+        "vote_time": "2022-12-20 19:06:52.64",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 368,
+        "tag": "CHNTCESRCN200039",
+        "name": "SANDRA OWUSU ANKOMAH",
+        "vote_time": "2022-12-20 19:12:46.655",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 374,
+        "tag": "CHNTCESRCN200042",
+        "name": "JANET KABENLAH",
+        "vote_time": "2022-12-20 19:14:46.907",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 375,
+        "tag": "CHNTCESNAP210090",
+        "name": "CECILIA ADDAI",
+        "vote_time": "2022-12-20 19:15:58.894",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 386,
+        "tag": "CHNTCESNAP210002",
+        "name": "REGINA NANA YAA KUMAH",
+        "vote_time": "2022-12-20 19:18:15.517",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,22,27,32,34,37,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 392,
+        "tag": "CHNTCESNAP210020",
+        "name": "SANDRA YEBOAH SIAW",
+        "vote_time": "2022-12-20 19:19:12.036",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,11,14,16,21,25,22,28,32,34,37,38,42,45,46,49,51,54,56,31,60",
+        "election_id": 1
+    },
+    {
+        "id": 393,
+        "tag": "CHNTCESRCN200045",
+        "name": "HILDA ARMAH",
+        "vote_time": "2022-12-20 19:19:27.304",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 399,
+        "tag": "CHNTCESRCN200086",
+        "name": "KISSIWAA BENEDICTA",
+        "vote_time": "2022-12-20 19:20:22.454",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,15,17,19,25,22,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 400,
+        "tag": "CHNTCESPHN210150",
+        "name": "SANDRA CODJOE",
+        "vote_time": "2022-12-20 19:20:33.177",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,16,19,25,22,27,33,35,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 401,
+        "tag": "CHNTCESNAP210080",
+        "name": "MARY ACKAH",
+        "vote_time": "2022-12-20 19:20:41.223",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 405,
+        "tag": "CHNTCESPHN210052",
+        "name": "YVONNE ANIMA NIMOH",
+        "vote_time": "2022-12-20 19:20:50.217",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 412,
+        "tag": "CHNTCESNAP210022",
+        "name": "GRACE AMANKWAH GYAADU",
+        "vote_time": "2022-12-20 19:22:45.77",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 413,
+        "tag": "CHNTCESRCN200067",
+        "name": "AGABUS NANA YAW BOAKYE DANKWA BOADI",
+        "vote_time": "2022-12-20 19:22:55.622",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 424,
+        "tag": "CHNTCESRCN200152",
+        "name": "LETICIA EWURAMA MANKU AMFO",
+        "vote_time": "2022-12-20 19:24:43.473",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 428,
+        "tag": "CHNTCESNAP210008",
+        "name": "MABEL ADJEI",
+        "vote_time": "2022-12-20 19:25:15.697",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 436,
+        "tag": "CHNTCESRCN200050",
+        "name": "DORCAS ANTWIWAA ASANTE",
+        "vote_time": "2022-12-20 19:26:47.131",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 452,
+        "tag": "CHNTCESPHN210082",
+        "name": "DEBORAH EDEM AGYA-YAO",
+        "vote_time": "2022-12-20 19:31:09.767",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,20,25,22,28,32,34,37,38,41,44,46,50,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 455,
+        "tag": "CHNTCESNAP210040",
+        "name": "DUEDU ESTHER",
+        "vote_time": "2022-12-20 19:31:38.914",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,25,23,28,32,35,37,38,41,44,46,50,52,55,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 460,
+        "tag": "CHNTCESNAP210050",
+        "name": "CONSTANCE GYETUAH",
+        "vote_time": "2022-12-20 19:35:29.916",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,28,32,34,37,38,41,44,46,50,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 465,
+        "tag": "CHNTCESPHN210022",
+        "name": "DAVID AMPOE",
+        "vote_time": "2022-12-20 19:37:03.932",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,12,14,17,19,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 467,
+        "tag": "CHNTCESRCN200051",
+        "name": "GIDEON AGYEMANG",
+        "vote_time": "2022-12-20 19:37:19.763",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 406,
+        "tag": "CHNTCESNAP210030",
+        "name": "REGINA HARRISON",
+        "vote_time": "2022-12-20 19:21:15.667",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 409,
+        "tag": "CHNTCESRCN200095",
+        "name": "FAUSTINA ELLABO",
+        "vote_time": "2022-12-20 19:21:25.737",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 411,
+        "tag": "CHNTCESRCN200087",
+        "name": "ELLEN BOADUAA",
+        "vote_time": "2022-12-20 19:22:44.152",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,15,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 415,
+        "tag": "CHNTCESNAP210125",
+        "name": "JOSEPHINE KYEREMATENG",
+        "vote_time": "2022-12-20 19:23:15.573",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 417,
+        "tag": "CHNTCESRCN200083",
+        "name": "GETRUDE ADUAKO AVEDZI",
+        "vote_time": "2022-12-20 19:23:53.03",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,41,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 434,
+        "tag": "CHNTCESPHN210148",
+        "name": "EFUA NKANSAH BOTWEY",
+        "vote_time": "2022-12-20 19:26:27.854",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,16,21,25,22,28,32,34,36,38,42,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 437,
+        "tag": "CHNTCESNAP210014",
+        "name": "RITA OWUSUA",
+        "vote_time": "2022-12-20 19:26:50.608",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 441,
+        "tag": "CHNTCESPHN210050",
+        "name": "AUGUSTINA AWOYI",
+        "vote_time": "2022-12-20 19:27:47.444",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,12,15,17,19,25,23,28,32,34,37,38,40,44,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 449,
+        "tag": "CHNTCESPHN210075",
+        "name": "ESTHER CUDJOE",
+        "vote_time": "2022-12-20 19:30:31.458",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 450,
+        "tag": "CHNTCESNAP210047",
+        "name": "TETTEY LINDA",
+        "vote_time": "2022-12-20 19:30:40.789",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 456,
+        "tag": "CHNTCESPHN210071",
+        "name": "LINDA QUAICOE",
+        "vote_time": "2022-12-20 19:32:59.292",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 459,
+        "tag": "CHNTCESRCN200071",
+        "name": "JALEEL ADAM",
+        "vote_time": "2022-12-20 19:33:55.859",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 463,
+        "tag": "CHNTCESRCN200102",
+        "name": "KWAKYE VINCENT JUNIOR",
+        "vote_time": "2022-12-20 19:36:46.99",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,23,28,32,34,37,38,40,44,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 470,
+        "tag": "CHNTCESPHN210121",
+        "name": "EZEKIEL  TAARSI",
+        "vote_time": "2022-12-20 19:39:11.467",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,52,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 474,
+        "tag": "CHNTCESRCN200049",
+        "name": "JOSHUA MINKAH",
+        "vote_time": "2022-12-20 19:41:01.951",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,16,19,25,22,27,32,34,36,38,40,44,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 475,
+        "tag": "CHNTCESNAP210082",
+        "name": "YAYRA GAMESU",
+        "vote_time": "2022-12-20 19:41:04.311",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,23,28,32,34,37,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 407,
+        "tag": "CHNTCESNAP210097",
+        "name": "DINAH ANKRAH",
+        "vote_time": "2022-12-20 19:21:16.392",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 418,
+        "tag": "CHNTCESRCN200028",
+        "name": "ELIZABETH ODOOM",
+        "vote_time": "2022-12-20 19:24:09.053",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,10,11,14,18,19,25,23,28,32,34,37,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 419,
+        "tag": "CHNTCESPHN210131",
+        "name": "REBECCA KWOFIE",
+        "vote_time": "2022-12-20 19:24:15.921",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 426,
+        "tag": "CHNTCESNAP210053",
+        "name": "EWURADJOA SAM QUANSAH",
+        "vote_time": "2022-12-20 19:24:54.655",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 429,
+        "tag": "CHNTCESRCN200004",
+        "name": "APPIAH NKETIAH BELINDA",
+        "vote_time": "2022-12-20 19:25:46.991",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 430,
+        "tag": "CHNTCESPHN210100",
+        "name": "STELLA NTIWAA PEPRAH",
+        "vote_time": "2022-12-20 19:26:10.627",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,15,16,19,25,24,27,32,34,37,38,41,44,46,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 442,
+        "tag": "CHNTCESPHN210062",
+        "name": "VIDA KOOMSON",
+        "vote_time": "2022-12-20 19:28:42.719",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,44,47,49,52,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 443,
+        "tag": "CHNTCESNAP210064",
+        "name": "SORKYARA PALMA BUCKLE",
+        "vote_time": "2022-12-20 19:29:03.47",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 445,
+        "tag": "CHNTCESRCN200005",
+        "name": "SARAH DONKOR",
+        "vote_time": "2022-12-20 19:29:18.157",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,44,46,49,51,54,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 448,
+        "tag": "CHNTCESPHN210034",
+        "name": "VIDA OTI-AKENTENG",
+        "vote_time": "2022-12-20 19:30:13.475",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,22,27,32,34,36,38,40,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 457,
+        "tag": "CHNTCESNAP210003",
+        "name": "SYLVIA NARTEKIE NARTEY",
+        "vote_time": "2022-12-20 19:33:12.574",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,15,17,20,25,23,28,32,34,37,38,41,43,47,50,52,55,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 458,
+        "tag": "CHNTCESNAP210078",
+        "name": "ROSEMARY ACKON",
+        "vote_time": "2022-12-20 19:33:13.331",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 462,
+        "tag": "CHNTCESRCN200106",
+        "name": "EMMANUEL  KAKU",
+        "vote_time": "2022-12-20 19:36:21.402",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 466,
+        "tag": "CHNTCESRCN200125",
+        "name": "PAULINA DARKWAA",
+        "vote_time": "2022-12-20 19:37:04.831",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,28,32,34,37,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 468,
+        "tag": "CHNTCESPHN210130",
+        "name": "ESTHER ANVOKWAW",
+        "vote_time": "2022-12-20 19:37:39.475",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,14,17,19,25,22,27,32,34,37,38,41,44,47,50,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 469,
+        "tag": "CHNTCESPHN210087",
+        "name": "ALHASSAN SADIQ MORO",
+        "vote_time": "2022-12-20 19:38:13.623",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,12,15,17,20,25,23,28,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 472,
+        "tag": "CHNTCESRCN200032",
+        "name": "DAVID KWABENA YENTU",
+        "vote_time": "2022-12-20 19:39:23.157",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 410,
+        "tag": "CHNTCESNAP210032",
+        "name": "GERTRUDE OTOO",
+        "vote_time": "2022-12-20 19:22:17.939",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,16,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 414,
+        "tag": "CHNTCESNAP210006",
+        "name": "EDWARD AMOAH",
+        "vote_time": "2022-12-20 19:22:56.614",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 420,
+        "tag": "CHNTCESNAP210105",
+        "name": "EBENEZER BONDZIE AFFUL",
+        "vote_time": "2022-12-20 19:24:33.185",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 421,
+        "tag": "CHNTCESNAP210121",
+        "name": "EMMANUEL ACQUAH",
+        "vote_time": "2022-12-20 19:24:40.628",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 435,
+        "tag": "CHNTCESRCN200092",
+        "name": "GEORGINA ATIBILA",
+        "vote_time": "2022-12-20 19:26:37.88",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 438,
+        "tag": "CHNTCESPHN210081",
+        "name": "MARTHA  MENSAH",
+        "vote_time": "2022-12-20 19:27:03.556",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,20,25,22,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 439,
+        "tag": "CHNTCESPHN210059",
+        "name": "BEATRICE MENSAH",
+        "vote_time": "2022-12-20 19:27:07.941",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,12,14,17,20,25,23,28,32,34,37,38,41,43,47,50,51,55,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 440,
+        "tag": "CHNTCESPHN210111",
+        "name": "ELLEN MENSAH AWOTWE",
+        "vote_time": "2022-12-20 19:27:30.741",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 444,
+        "tag": "CHNTCESRCN200024",
+        "name": "AGNES WIREDU",
+        "vote_time": "2022-12-20 19:29:06.29",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,20,25,22,27,32,34,36,38,40,43,47,49,52,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 446,
+        "tag": "CHNTCESPHN210134",
+        "name": "ELIZABETH MENSAH",
+        "vote_time": "2022-12-20 19:29:46.767",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,12,15,17,19,25,22,28,32,34,37,38,41,44,46,50,51,55,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 447,
+        "tag": "CHNTCESRCN200026",
+        "name": "BENEDICTA ANUMEL",
+        "vote_time": "2022-12-20 19:29:55.633",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 451,
+        "tag": "CHNTCESNAP210054",
+        "name": "DAISY SACKEY",
+        "vote_time": "2022-12-20 19:30:58.38",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,22,27,32,34,36,38,41,43,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 453,
+        "tag": "CHNTCESRCN200002",
+        "name": "JANET OWUSUWAA ATIEKU",
+        "vote_time": "2022-12-20 19:31:13.449",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,47,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 454,
+        "tag": "CHNTCESRCN200094",
+        "name": "FESTUS ATO ANDAM",
+        "vote_time": "2022-12-20 19:31:21.681",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,43,47,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 461,
+        "tag": "CHNTCESRCN200128",
+        "name": "DORCAS BUABENG",
+        "vote_time": "2022-12-20 19:35:57.074",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,23,27,32,34,36,38,40,44,46,49,52,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 464,
+        "tag": "CHNTCESPHN210046",
+        "name": "BLESS HENDRICK AHIAMADJIE",
+        "vote_time": "2022-12-20 19:36:48.002",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,14,17,19,25,23,27,32,34,36,38,41,44,46,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 473,
+        "tag": "CHNTCESPHN210058",
+        "name": "GIFTY MENSAH",
+        "vote_time": "2022-12-20 19:40:05.958",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,12,14,17,20,25,23,27,32,34,36,38,41,44,46,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 476,
+        "tag": "CHNTCESPHN210096",
+        "name": "COMFORT  ADJEI",
+        "vote_time": "2022-12-20 19:41:39.995",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,47,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 477,
+        "tag": "CHNTCESRCN200105",
+        "name": "GHANDY OPPONG",
+        "vote_time": "2022-12-20 19:42:02.637",
+        "vote_status": 1,
+        "vote_sum": "2,3,6,9,11,15,17,19,25,22,27,32,34,36,38,40,44,46,49,52,55,58,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 479,
+        "tag": "CHNTCESPHN210099",
+        "name": "ABIGAIL GYIMAH",
+        "vote_time": "2022-12-20 19:44:58.867",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,7,11,14,16,19,25,23,27,32,34,36,38,41,43,46,49,51,54,56,30,60",
+        "election_id": 1
+    },
+    {
+        "id": 480,
+        "tag": "CHNTCESPHN210060",
+        "name": "BLESSING ENA GIDI",
+        "vote_time": "2022-12-20 19:48:37.232",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,22,27,32,34,36,38,40,44,47,49,51,54,57,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 481,
+        "tag": "CHNTCESRCN200135",
+        "name": "SAFIATU YUSSIF MOHAMMED",
+        "vote_time": "2022-12-20 19:49:04.883",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,14,17,19,25,22,27,32,34,36,38,40,43,46,49,52,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 482,
+        "tag": "CHNTCESPHN210048",
+        "name": "JANET SERWAAH SIRIBOE",
+        "vote_time": "2022-12-20 19:52:38.006",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,7,11,14,17,20,25,23,28,32,34,36,38,41,44,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 483,
+        "tag": "CHNTCESPHN210005",
+        "name": "IRENE MARY ANDOH",
+        "vote_time": "2022-12-20 19:53:13.757",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,11,15,17,19,25,22,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 484,
+        "tag": "CHNTCESPHN210118",
+        "name": "LISA KERRY TWENEBOAH",
+        "vote_time": "2022-12-20 19:57:26.655",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,11,14,17,19,25,23,27,32,34,36,38,40,43,46,49,51,54,56,29,59",
+        "election_id": 1
+    },
+    {
+        "id": 485,
+        "tag": "CHNTCESPHN210089",
+        "name": "FELIX WHAJAH",
+        "vote_time": "2022-12-20 19:57:49.499",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,57,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 486,
+        "tag": "CHNTCESPHN210018",
+        "name": "PATRICIA EGYIR",
+        "vote_time": "2022-12-20 20:05:43.375",
+        "vote_status": 1,
+        "vote_sum": "1,3,6,9,11,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 487,
+        "tag": "CHNTCESPHN210015",
+        "name": "EMMA KEELSON",
+        "vote_time": "2022-12-20 20:14:26.694",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,9,12,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    },
+    {
+        "id": 488,
+        "tag": "CHNTCESPHN210092",
+        "name": "REBECCA BOSSMAN",
+        "vote_time": "2022-12-20 20:17:42.881",
+        "vote_status": 1,
+        "vote_sum": "1,3,5,8,12,14,17,19,25,23,27,32,34,36,38,41,43,47,49,51,54,56,30,59",
+        "election_id": 1
+    }
+]

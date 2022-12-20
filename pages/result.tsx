@@ -110,7 +110,7 @@ const PaperResult = () => {
                                 getPortfolio(row.name)
                                   .sort((a: any, b: any) => b.votes - a.votes)
                                   .map((r: any, j: any) => 
-                                    r.name.toLowerCase() != 'skip' ?
+                                    r.tag == 'skip' ?
                                 (<div className="absolute -top-[3.5rem] left-2 my-3 flex flex-wrap items-center justify-center"><span className="pl-2 py-1 text-xs bg-slate-50/90 border rounded text-blue-900 font-bold italic">
                                   SKIPPED VOTES 
                                   <span className="mx-1 text-red-800">{r.votes || 0} - {" "} 
