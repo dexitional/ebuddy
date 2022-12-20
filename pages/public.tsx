@@ -47,7 +47,7 @@ export default function Public() {
   
   return (
     <PublicLayout>
-    <h3 className="rounded-full mb-4 px-10 py-1 bg-slate-100 text-xl text-gray-500 font-semibold tracking-widest flex items-center justify-between">
+    <h3 className="sm:rounded-full mb-4 px-10 py-3 sm:py-1 bg-slate-100 text-xl text-gray-500 font-semibold tracking-widest flex flex-col sm:flex-row space-y-2 sm:space-y-0 items-center justify-between">
       <span>PUBLIC MONITOR</span>
       <div onClick={()=> router.back()} className="px-2 py-1 text-xs text-blue-900 font-semibold rounded border-2 border-blue-900 cursor-pointer">LOGIN TO VOTE</div>
     </h3>
