@@ -172,9 +172,7 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
     }
   }, [pageview]);
 
-  /**/
-  console.log(evsdata)
-  if(evsdata && evsdata?.election && evsdata.election[0].allow_monitor == 0) Router.back()
+  if(!evsdata || (evsdata && evsdata?.election && evsdata.election[0].allow_result == 0)) Router.back()
   return (
     <>
       <div className={styles.wrapper}>

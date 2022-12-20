@@ -99,7 +99,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
     console.log(pageview)
   }, [pageview]);
 
-  if(evsdata && evsdata?.election && evsdata.election[0].allow_vip == 0) Router.back()
+  if(!evsdata || (evsdata && evsdata?.election && evsdata.election[0].allow_result == 0)) Router.back()
   return (
     <>
       <div className={styles.wrapper}>

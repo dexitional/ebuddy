@@ -149,15 +149,19 @@ module.exports = {
     //const en = await db.query("select * from eb_election where centre_id = "+id);
     const { data: en } = await db.from('eb_election').select(`*`).eq('centre_id', id)
     if (en && en.length > 0) {
-      // Update Centre Voter DataS
+      // Update Centre Voter Data
       //await db.query("update eb_voter set voted = 0, verified = 0, verified_at = null where centre_id = "+id+"")
-      await db.from('eb_voter').update({ voted: 0, verified: 0, verified_at: null }).eq('centre_id', id)
-
+      await db.from('eb_voter').update({ voted: 0, verified: 1, verified_at: null }).eq('centre_id', id)
       for (var es of en) {
         // Load Candidates of portfolios of elections
-        //await db.query("update eb_candidate c left join eb_portfolio p on p.id = c.portfolio_id set votes = 0 where p.election_id = "+es.id)
-        await db.from('eb_candidate').update({ votes: 0 }).eq('eb_portfolio.election_id', es.id)
-
+        const { data: ct } = await db.from('eb_candidate').select(`*,eb_portfolio(id)`).eq('eb_portfolio.election_id', es.id)
+        if (ct && ct.length > 0) {
+          for (const cs of ct) {
+            // Reset Candidate votes
+            //await db.query("update eb_candidate c left join eb_portfolio p on p.id = c.portfolio_id set votes = 0 where p.election_id = "+es.id)
+            await db.from('eb_candidate').update({ votes: 0 }).eq('id', cs.id)
+          }
+        }
         // Delete Elector
         //await db.query("delete from eb_elector where election_id = "+es.id)
         await db.from('eb_elector').delete().eq('election_id', es.id)
