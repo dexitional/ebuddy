@@ -186,7 +186,8 @@ module.exports = {
         if (!es.sms_status || es.sms_status != 1000) {
           // Generate Password
           const password = es.password ? es.password : `${Math.random() * 1000}`
-          const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote!`
+          //const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote!`
+          const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Please goto the Auditorium to vote!`
           const phone = es.phone[0] == '0' ? es.phone : `0${es.phone}`
           const sender = `eVote`
           // Send SMS
@@ -207,7 +208,8 @@ module.exports = {
       for (var es of en) {
         // Generate Password
         const password = es.password ? es.password : `${Math.random() * 1000}`
-        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote!`
+        //const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Goto https://ebuddy.vercel.app to vote!`
+        const msg = `Hi, Please vote with Username: ${es.tag} , Password: ${es.password} , Please goto the Auditorium to vote!`
         const phone = es.phone[0] == '0' ? es.phone : `0${es.phone}`
         const sender = `eVote`
         // Send SMS
