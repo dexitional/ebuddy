@@ -97,8 +97,8 @@ export default function Voters({setPage}: any) {
            
             <div className="col-span-1 flex flex-col sm:flex-row space-x-4">
                <div className="flex items-center justify-center space-x-1 space-y-1 flex-wrap sm:flex-nowrap">
-                   { row.sms_status == 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded ring-1 ring-green-700 bg-green-700 text-white border border-white '>SENT</button>)}
-                   { row.sms_status !== 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded bg-blue-900 text-white border border-white '>SEND</button>)}
+                   { row.sms_status == 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded ring-1 ring-green-700 bg-green-700 text-white border border-white'>SENT</button>)}
+                   { row.sms_status !== 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded bg-blue-900 text-white border border-white'>SEND</button>)}
                </div>
             </div>
               <div className="sm:hidden my-2 w-full border-b-2 border-dashed border-blue-900"></div>

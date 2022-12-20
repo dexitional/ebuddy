@@ -406,16 +406,19 @@ module.exports = {
     try {
       // Get Portfolio count & Verify whether equal to data posted
       //var res = await db.query("select * from eb_portfolio where status = 1 and election_id = " + id);
+      var { data: chk } = await db.from('eb_log').select('tag').eq('tag', tag).eq('election_id', id)
       var { data: res } = await db.from('eb_portfolio').select('*').eq('status', 1).eq('election_id', id)
       if (res && res.length > 0) {
         const count = res.length;
         //var vt = await db.query("select * from eb_elector where election_id = " +id +" and trim(tag) = '" +tag +"' and vote_status = 1");
         var { data: vt } = await db.from('eb_elector').select('*').eq('tag', tag).eq('election_id', id).eq('vote_status', 1)
-        if (vt && vt.length <= 0) {
+        if (vt && chk && vt.length <= 0 && chk.length <= 0) {
           if (count == Object.values(votes).length) {
-            // Update Candidate Votes Count
             const vals = Object.values(votes);
             var update_count = 0;
+            // Update Logs
+            await db.from('eb_log').insert({ tag, election_id: id, meta: Object.values(votes).join(",") }).eq('id', val).select()
+            // Update Candidate Votes Count
             if (vals.length > 0) {
               for (var val of vals) {
                 //const cs = await db.query("select * from eb_candidate where id = " + val);
@@ -448,7 +451,6 @@ module.exports = {
             };
             //const ins = await db.query("insert into eb_elector set ?", dm);
             //if (ins && ins.insertId > 0) {
-            await db.from('eb_log').insert({ tag, election_id: id, meta: Object.values(votes).join(",") }).eq('id', val).select()
             const { data: ins, error }: any = await db.from('eb_elector').insert(dm).select()
             if (ins && ins.length > 0) {
               return { success: true, msg: "Voted successfully", code: 1000 };
@@ -473,6 +475,33 @@ module.exports = {
     } catch (e: any) {
       //db.rollback();
       //console.info('Rollback successful');
+      return {
+        success: false,
+        msg: e.message,
+        code: 1004,
+      };
+    }
+  },
+
+
+  syncVoteData: async () => {
+    try {
+      var { data: res } = await db.from('eb_elector').select('*')
+      if (res && res.length > 0) {
+        await db.from('eb_candidate').update({ votes2: 0 })
+        for (const vs of res) {
+          const votes = vs.vote_sum.split(",")
+          if (votes && votes.length > 0) {
+            for (const vm of votes) {
+              const { data: vc }: any = await db.from('eb_candidate').select("votes2").eq('id', vm.trim()).single()
+              const { data: rm } = await db.from('eb_candidate').update({ votes2: (vc.votes2 + 1) }).eq('id', vm.trim()).select()
+              console.log(rm)
+            }
+          }
+        }
+        return res
+      }
+    } catch (e: any) {
       return {
         success: false,
         msg: e.message,

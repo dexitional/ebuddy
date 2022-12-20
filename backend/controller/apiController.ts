@@ -285,6 +285,18 @@ export default {
     }
   },
 
+  syncVoteData: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      var resp = await API.syncVoteData();
+      res.status(200).json(resp);
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
   fetchReceipt: async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       const { rid, username } = req.query
@@ -407,30 +419,30 @@ export default {
   },
 
 
-/* CANDIDATES */
-/* PORTFOLIOS */
+  /* CANDIDATES */
+  /* PORTFOLIOS */
 
-/* CENTRES */
-activateCentre: async (req: NextApiRequest, res: NextApiResponse) => {
-  try {
-    const { activatecentre } = req.query
-    var data = await API.activateCentre(activatecentre);
-    if (data) {
-      res.status(200).json({ success: true, data });
-    } else {
-      res.status(200).json({
-        success: false,
-        data: null,
-        msg: "No Data!",
-      });
+  /* CENTRES */
+  activateCentre: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      const { activatecentre } = req.query
+      var data = await API.activateCentre(activatecentre);
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
     }
-  } catch (e) {
-    console.log(e);
-    res
-      .status(200)
-      .json({ success: false, data: null, msg: "Please Check settings!" });
-  }
-},
+  },
 
 
   loadCentre: async (req: NextApiRequest, res: NextApiResponse) => {
@@ -454,249 +466,249 @@ activateCentre: async (req: NextApiRequest, res: NextApiResponse) => {
     }
   },
 
-    loadCentrePhotos: async (req: NextApiRequest, res: NextApiResponse) => {
+  loadCentrePhotos: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      const { loadphoto } = req.query
+      var data = await API.loadCentrePhotos(loadphoto);
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
+
+  sendCrendentials: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      const { sendvoters } = req.query
+      var data = await API.sendCrendentials(sendvoters);
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
+
+  resetCentreElections: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      const { reset } = req.query
+      var data = await API.resetCentreElections(reset);
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
+  fetchCentres: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      var data = await API.fetchCentres();
+      if (data) {
+        res.status(200).json({ success: true, data });
+      } else {
+        res.status(200).json({
+          success: false,
+          data: null,
+          msg: "No Data!",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
+  /* PHOTOS */
+
+  fetchPhoto: async (req: any, res: any) => {
+    const { eid, tag } = req.query
+    var pic = await API.fetchPhoto(tag, eid); // Photo
+    if (pic && pic.length > 0) {
+      //var filepath = "/../.."+pic[0]?.path;
+      var filepath = path.join(__dirname, "/../../../../backend", pic[0]?.path);
+      var nonepath = path.join(__dirname, "/../../../", "none.png")
+      console.log(filepath);
+      console.log(__dirname);
+      console.log("../../" + pic[0]?.path);
       try {
-        const { loadphoto } = req.query
-        var data = await API.loadCentrePhotos(loadphoto);
-        if (data) {
-          res.status(200).json({ success: true, data });
+        var stats = fs.statSync(filepath);
+        if (stats) {
+          res.setHeader('Content-Type', 'image/jpg')
+          res
+            .status(200)
+            .send(fs.readFileSync(filepath));
         } else {
-          res.status(200).json({
-            success: false,
-            data: null,
-            msg: "No Data!",
-          });
+          res.setHeader('Content-Type', 'image/png')
+          res
+            .status(200)
+            .send(fs.readFileSync(nonepath));
         }
       } catch (e) {
         console.log(e);
+        res.setHeader('Content-Type', 'image/png')
         res
           .status(200)
-          .json({ success: false, data: null, msg: "Please Check settings!" });
+          .send(fs.readFileSync(nonepath));
       }
-    },
+    } else {
+      res.setHeader('Content-Type', 'image/png')
+      res
+        .status(200)
+        .send(fs.readFileSync(path.join("./public/upload", "none.png")));
+    }
+  },
 
-
-      sendCrendentials: async (req: NextApiRequest, res: NextApiResponse) => {
-        try {
-          const { sendvoters } = req.query
-          var data = await API.sendCrendentials(sendvoters);
-          if (data) {
-            res.status(200).json({ success: true, data });
-          } else {
-            res.status(200).json({
-              success: false,
-              data: null,
-              msg: "No Data!",
-            });
-          }
-        } catch (e) {
-          console.log(e);
+  /*
+  fetchPhoto: async (req:any, res:any) => {
+    const { eid,tag } = req.query
+    var pic = await API.fetchPhoto(tag, eid); // Photo
+    if (pic && pic.length > 0) {
+      var filepath = path.join(__dirname, "/../../../public", pic[0]?.path);
+      //var filepath = path.join("./public", pic[0]?.path);
+      //var filepath = path.join(__dirname,"/../.././public", pic[0]?.path)
+      var nonepath = path.join(__dirname,"../.././public", "none.png")
+      console.log(filepath);
+      console.log(__dirname);
+      console.log(__dirname, "/../../../public", pic[0]?.path);
+      try {
+        var stats = fs.statSync(filepath);
+        if (stats) {
+          res.setHeader('Content-Type', 'image/jpg')
           res
             .status(200)
-            .json({ success: false, data: null, msg: "Please Check settings!" });
+            .send(fs.readFileSync(filepath));
+        } else {
+          res.setHeader('Content-Type', 'image/png')
+          res
+            .status(200)
+            .send(fs.readFileSync(nonepath));
         }
-      },
+      } catch (e) {
+        console.log(e);
+        res.setHeader('Content-Type', 'image/png')
+        res
+          .status(200)
+          .send(fs.readFileSync(nonepath));
+      }
+    } else {
+      res.setHeader('Content-Type', 'image/png')
+      res
+        .status(200)
+        .send(fs.readFileSync(path.join("./public/upload", "none.png")));
+    }
+  },
+  */
 
 
-        resetCentreElections: async (req: NextApiRequest, res: NextApiResponse) => {
-          try {
-            const { reset } = req.query
-            var data = await API.resetCentreElections(reset);
-            if (data) {
-              res.status(200).json({ success: true, data });
-            } else {
-              res.status(200).json({
-                success: false,
-                data: null,
-                msg: "No Data!",
-              });
-            }
-          } catch (e) {
-            console.log(e);
-            res
-              .status(200)
-              .json({ success: false, data: null, msg: "Please Check settings!" });
-          }
-        },
+  /*
+  fetchPhoto: async (req:any, res:any) => {
+    const { eid,tag } = req.query
+    var pic = await API.fetchPhoto(tag, eid); // Photo
+    if (pic && pic.length > 0) {
+      var filepath = path.join(__dirname, "/../../../../backend", pic[0]?.path);
+      console.log(filepath);
+      try {
+        var stats = fs.statSync(filepath);
+        if (stats) {
+          res.setHeader('Content-Type', 'image/jpg')
+          res
+            .status(200)
+            .send(fs.readFileSync(path.join(__dirname, "/../../../../backend", pic[0]?.path)));
+        } else {
+          res.setHeader('Content-Type', 'image/png')
+          res
+            .status(200)
+            .send(fs.readFileSync((path.join(__dirname, "/../../../../backend", "none.png"))));
+        }
+      } catch (e) {
+        console.log(e);
+        res.setHeader('Content-Type', 'image/png')
+        res
+          .status(200)
+          .send(fs.readFileSync(path.join(__dirname, "/../../../../backend/upload", "none.png")));
+      }
+    } else {
+      res.setHeader('Content-Type', 'image/png')
+      res
+        .status(200)
+        .send(fs.readFileSync(path.join(__dirname, "/../../../../backend/upload", "none.png")));
+    }
+  },
+  */
 
-          fetchCentres: async (req: NextApiRequest, res: NextApiResponse) => {
-            try {
-              var data = await API.fetchCentres();
-              if (data) {
-                res.status(200).json({ success: true, data });
-              } else {
-                res.status(200).json({
-                  success: false,
-                  data: null,
-                  msg: "No Data!",
-                });
-              }
-            } catch (e) {
-              console.log(e);
-              res
-                .status(200)
-                .json({ success: false, data: null, msg: "Please Check settings!" });
-            }
-          },
+  postEvsPhoto: async (req: any, res: any) => {
+    var { id, election_id } = req.body;
+    //var imageBuffer = decodeBase64Image(req.body.photo);
+    var spath = `./public/cdn/photo/evs/${election_id}`;
+    const file = id == "logo" ? `${spath}/${id}.png` : `${spath}/${id}.jpg`;
+    console.log(file);
+    //fs.writeFile(file, imageBuffer.data, async function (err) {
+    fs.writeFile(file, req.body.photo.data, async function (err: any) {
+      if (err) {
+        console.log(err);
+        res
+          .status(200)
+          .json({ success: false, data: null, msg: "Photo not saved!" });
+      }
+      // Update Database
+      /*
+      const photo =
+        id == "logo"
+          ? `./public/cdn/photo/evs/${election_id}/${id}.png`
+          : `./public/cdn/photo/evs/${election_id}/${id}.jpg`;
+      const query =
+        id == "logo"
+          ? `update ehub_vote.election set logo = '${photo}'"`
+          : `update ehub_vote.candidate set photo = '${photo}'"`;
+      const result = await db.query(query);
+      res.status(200).json({ success: true, data: result });
+      */
+    });
+  },
 
-            /* PHOTOS */
-
-            fetchPhoto: async (req: any, res: any) => {
-              const { eid, tag } = req.query
-              var pic = await API.fetchPhoto(tag, eid); // Photo
-              if (pic && pic.length > 0) {
-                //var filepath = "/../.."+pic[0]?.path;
-                var filepath = path.join(__dirname, "/../../../../backend", pic[0]?.path);
-                var nonepath = path.join(__dirname, "/../../../", "none.png")
-                console.log(filepath);
-                console.log(__dirname);
-                console.log("../../" + pic[0]?.path);
-                try {
-                  var stats = fs.statSync(filepath);
-                  if (stats) {
-                    res.setHeader('Content-Type', 'image/jpg')
-                    res
-                      .status(200)
-                      .send(fs.readFileSync(filepath));
-                  } else {
-                    res.setHeader('Content-Type', 'image/png')
-                    res
-                      .status(200)
-                      .send(fs.readFileSync(nonepath));
-                  }
-                } catch (e) {
-                  console.log(e);
-                  res.setHeader('Content-Type', 'image/png')
-                  res
-                    .status(200)
-                    .send(fs.readFileSync(nonepath));
-                }
-              } else {
-                res.setHeader('Content-Type', 'image/png')
-                res
-                  .status(200)
-                  .send(fs.readFileSync(path.join("./public/upload", "none.png")));
-              }
-            },
-
-              /*
-              fetchPhoto: async (req:any, res:any) => {
-                const { eid,tag } = req.query
-                var pic = await API.fetchPhoto(tag, eid); // Photo
-                if (pic && pic.length > 0) {
-                  var filepath = path.join(__dirname, "/../../../public", pic[0]?.path);
-                  //var filepath = path.join("./public", pic[0]?.path);
-                  //var filepath = path.join(__dirname,"/../.././public", pic[0]?.path)
-                  var nonepath = path.join(__dirname,"../.././public", "none.png")
-                  console.log(filepath);
-                  console.log(__dirname);
-                  console.log(__dirname, "/../../../public", pic[0]?.path);
-                  try {
-                    var stats = fs.statSync(filepath);
-                    if (stats) {
-                      res.setHeader('Content-Type', 'image/jpg')
-                      res
-                        .status(200)
-                        .send(fs.readFileSync(filepath));
-                    } else {
-                      res.setHeader('Content-Type', 'image/png')
-                      res
-                        .status(200)
-                        .send(fs.readFileSync(nonepath));
-                    }
-                  } catch (e) {
-                    console.log(e);
-                    res.setHeader('Content-Type', 'image/png')
-                    res
-                      .status(200)
-                      .send(fs.readFileSync(nonepath));
-                  }
-                } else {
-                  res.setHeader('Content-Type', 'image/png')
-                  res
-                    .status(200)
-                    .send(fs.readFileSync(path.join("./public/upload", "none.png")));
-                }
-              },
-              */
-
-
-              /*
-              fetchPhoto: async (req:any, res:any) => {
-                const { eid,tag } = req.query
-                var pic = await API.fetchPhoto(tag, eid); // Photo
-                if (pic && pic.length > 0) {
-                  var filepath = path.join(__dirname, "/../../../../backend", pic[0]?.path);
-                  console.log(filepath);
-                  try {
-                    var stats = fs.statSync(filepath);
-                    if (stats) {
-                      res.setHeader('Content-Type', 'image/jpg')
-                      res
-                        .status(200)
-                        .send(fs.readFileSync(path.join(__dirname, "/../../../../backend", pic[0]?.path)));
-                    } else {
-                      res.setHeader('Content-Type', 'image/png')
-                      res
-                        .status(200)
-                        .send(fs.readFileSync((path.join(__dirname, "/../../../../backend", "none.png"))));
-                    }
-                  } catch (e) {
-                    console.log(e);
-                    res.setHeader('Content-Type', 'image/png')
-                    res
-                      .status(200)
-                      .send(fs.readFileSync(path.join(__dirname, "/../../../../backend/upload", "none.png")));
-                  }
-                } else {
-                  res.setHeader('Content-Type', 'image/png')
-                  res
-                    .status(200)
-                    .send(fs.readFileSync(path.join(__dirname, "/../../../../backend/upload", "none.png")));
-                }
-              },
-              */
-
-              postEvsPhoto: async (req: any, res: any) => {
-                var { id, election_id } = req.body;
-                //var imageBuffer = decodeBase64Image(req.body.photo);
-                var spath = `./public/cdn/photo/evs/${election_id}`;
-                const file = id == "logo" ? `${spath}/${id}.png` : `${spath}/${id}.jpg`;
-                console.log(file);
-                //fs.writeFile(file, imageBuffer.data, async function (err) {
-                fs.writeFile(file, req.body.photo.data, async function (err: any) {
-                  if (err) {
-                    console.log(err);
-                    res
-                      .status(200)
-                      .json({ success: false, data: null, msg: "Photo not saved!" });
-                  }
-                  // Update Database
-                  /*
-                  const photo =
-                    id == "logo"
-                      ? `./public/cdn/photo/evs/${election_id}/${id}.png`
-                      : `./public/cdn/photo/evs/${election_id}/${id}.jpg`;
-                  const query =
-                    id == "logo"
-                      ? `update ehub_vote.election set logo = '${photo}'"`
-                      : `update ehub_vote.candidate set photo = '${photo}'"`;
-                  const result = await db.query(query);
-                  res.status(200).json({ success: true, data: result });
-                  */
-                });
-              },
-
-                /* CONTROLS */
-                saveControl: async (req: NextApiRequest, res: NextApiResponse) => {
-                  try {
-                    var resp = await API.saveControl(req.body);
-                    res.status(200).json({ success: true, resp });
-                  } catch (e) {
-                    console.log(e);
-                    res
-                      .status(200)
-                      .json({ success: false, data: null, msg: "Please Check settings!" });
-                  }
-                },
+  /* CONTROLS */
+  saveControl: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      var resp = await API.saveControl(req.body);
+      res.status(200).json({ success: true, resp });
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
 };
