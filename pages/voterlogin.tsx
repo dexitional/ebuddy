@@ -79,8 +79,8 @@ export default function VoterLogin() {
                         </div>
                         <div className="flex space-x-2 items-center justify-center">
                         <Link href="/public"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">Monitor Elections</span></Link>
-                        <Link href="/vvip"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">Goto Strongroom</span></Link>
-                        <Link href="/result"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">View Results</span></Link>
+                        {/*<Link href="/vvip"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">Goto Strongroom</span></Link>
+                        <Link href="/result"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">View Results</span></Link> */}
                         </div>
                         <span className="mt-4 text-[10px] font-semibold text-center text-blue-900/90 hover:underline decoration-blue-900/90 cursor-default">Copyright &copy; K-Soft GH {new Date().getFullYear()}</span>
                     
