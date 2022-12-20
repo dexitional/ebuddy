@@ -19,6 +19,7 @@ export default function OmegaVoting({ setPage }: any) {
   const [elections, setElections] = useState<any>([]);
   const [electionIndex, setElectionIndex] = useState<number>(0);
   const { user, eid } = useUserStore((state) => state);
+  const [loading, setLoading] = useState<any>(false);
 
   const getPortfolio = (name: string) => {
     return (
@@ -79,6 +80,7 @@ export default function OmegaVoting({ setPage }: any) {
     //const ok = window.confirm(`SUBMIT VOTE FOR CHOSEN CANDIDATES ?`);
     //if (ok) {
       if (allowSubmit()) {
+        setLoading(true)
         const resp = await postData(data);
         if (resp.success) {
           if(electionIndex == elections.length-1) {
@@ -88,6 +90,7 @@ export default function OmegaVoting({ setPage }: any) {
         
             if(ac.success){
               Notiflix.Notify.success('VOTED SUCCESSFULLY!');
+              setLoading(false)
               Router.push('/voterlogin')
               useUserStore.setState({ user:null})
             }
@@ -96,17 +99,20 @@ export default function OmegaVoting({ setPage }: any) {
               //setPageview(-1)
               //setVoter({})
               //initiate()
-             
+              
               const index = Math.min(electionIndex+1,elections.length-1);
               setPageview(-1) // Fix for Quick Transition Setting to -1
               setVoter({}) // Automatically causes transition
               setElectionIndex(index)
               setEvsdata(elections[index].data)
+              setLoading(false)
           }
         } else {
+          setLoading(false)
           Notiflix.Notify.failure(resp.msg.toUpperCase());
         }
       } else {
+        setLoading(false)
         Notiflix.Notify.info('PLEASE FINALIZE CANDIDATE SELECTIONS');
       }
    // }
@@ -224,7 +230,9 @@ export default function OmegaVoting({ setPage }: any) {
           </button>
         </div>
 
-        {(evsdata?.portfolios?.map((row: any, i: React.Key) => 
+        {loading ?
+        (<div className="h-56 w-full flex items-center justify-center"><span className="text-sm font-serif font-semibold">PLEASE WAIT, SUBMITTING VOTES ...</span></div>)
+        : (evsdata?.portfolios?.map((row: any, i: React.Key) => 
             pageview == i ? (
               <div key={row.id} className={styles.main}>
                 <h2 className="w-auto my-2 py-4 sm:py-1 px-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:items-center justify-between font-bold tracking-widest bg-slate-100 text-slate-500 sm:rounded-full">
@@ -297,7 +305,8 @@ export default function OmegaVoting({ setPage }: any) {
                 </div>
               </div>
             ) : null
-          )) || <div className="h-56 w-full flex items-center justify-center"><span className="text-sm font-serif font-semibold">PLEASE WAIT ...</span></div>}
+          )) || (<div className="h-56 w-full flex items-center justify-center"><span className="text-sm font-serif font-semibold">PLEASE WAIT ...</span></div>)
+        }
 
         {/* <div className={styles.aside}></div> */}
       </div>
