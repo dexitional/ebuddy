@@ -67,7 +67,7 @@ export default function Voters({setPage}: any) {
     <PagerNew onChange={onChange} onSubmit={onSubmit} keyword={keyword} count={data.length} />
     <Table
         header={
-        <div className="gap-y-1 gap-x-3 grid grid-cols-7 text-center">
+        <div className="gap-y-1 gap-x-3 hidden sm:grid grid-cols-7 text-center">
             <span className="col-span-2 indent-20 text-left font-semibold">VOTER</span>
             <span className="col-span-2 font-semibold">PASSWORD</span>
             <span className="col-span-1 font-semibold">VOTE STATUS</span>
@@ -77,27 +77,31 @@ export default function Voters({setPage}: any) {
         </div>
         }>
 
-        <div className="gap-y-4 gap-x-3 grid grid-cols-7 text-center overflow-scroll max-h-screen">
+        <div className="gap-y-3 sm:gap-y-4 sm:gap-x-3 flex flex-col sm:grid sm:grid-cols-7 text-center overflow-scroll max-h-screen">
             { data?.map(( row:any, i:React.Key ) => (
             <React.Fragment key={i}>
-            <span className="col-span-2 font-medium text-left flex flex-row space-x-4">
+            <div className="col-span-2 font-medium  flex flex-col space-y-1 text-center sm:text-left sm:flex-row space-x-4">
+              <span className="flex items-center justify-center sm:hidden w-full rounded bg-slate-100 text-gray-600 sm:indent-20 text-center sm:text-left font-bold">VOTER</span>
               <span>{row.name} <em className="block text-blue-900 font-semibold">{row.tag}</em></span>
-            </span>
-            <span className="col-span-2 font-medium "><b className="text-xs italic text-red-800">{row.password}</b></span>
-            <span className={`col-span-1 text-xs text-center font-bold`}>{ row.voted == 1 ? 'VOTED':'NOT VOTED' }</span>
-            {/*
-            <span className="col-span-1 font-bold text-center">
-              { row.approval == 0 && <span className='flex items-center justify-center py-0 p-0.5 rounded border '>{row.ordertype == 'normal' ? 'Cash Sale':'Credit Sale'}</span> }
-              { row.approval == 1 && <span className="flex items-center justify-center py-0 p-0.5 rounded border border-green-600">{row.ordertype == 'normal' ? 'Cash Sale':'Credit Sale'}</span> }
-              { row.approval == 2 && <span className='flex items-center justify-center py-0 p-0.5 rounded border border-yellow-600'>{row.ordertype == 'normal' ? 'Cash Sale':'Credit Sale'}</span> }
-            </span>
-            */}
-            <span className="col-span-1">
+            </div>
+
+            <div className="col-span-2 font-medium flex flex-col space-y-1 text-center sm:text-left sm:flex-row space-x-4">
+              <span className="flex items-center justify-center sm:hidden w-full rounded bg-slate-100 text-gray-600 font-bold">PASSWORD</span>
+              <b className="text-xs italic text-blue-900">{row.password}</b>
+            </div>
+
+            <div className={`col-span-1 sm:text-xs font-bold flex flex-col space-y-1 text-center sm:text-left sm:flex-row space-x-4`}>
+              <span className="flex items-center justify-center sm:hidden w-full rounded bg-slate-100 text-gray-600  font-bold">VOTE STATUS</span>
+              <span>{ row.voted == 1 ? 'VOTED':'NOT VOTED' }</span>
+            </div>
+           
+            <div className="col-span-1 flex flex-col sm:flex-row space-x-4">
                <div className="flex items-center justify-center space-x-1 space-y-1 flex-wrap sm:flex-nowrap">
                    { row.sms_status == 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded ring-1 ring-green-700 bg-green-700 text-white border border-white '>SENT</button>)}
                    { row.sms_status !== 1000 && (<button onClick={() => verifyVoter(row.id)} className='text-[10px] font-semibold flex items-center justify-center px-2 py-0 rounded bg-blue-900 text-white border border-white '>SEND</button>)}
                </div>
-            </span>
+            </div>
+            <div className="my-2 w-full border-b-2 border-dashed border-blue-900"></div>
             </React.Fragment>
         ))}
         </div>
