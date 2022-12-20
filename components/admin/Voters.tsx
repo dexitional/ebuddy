@@ -69,7 +69,7 @@ export default function Voters({setPage}: any) {
         header={
         <div className="gap-y-1 gap-x-3 grid grid-cols-7 text-center">
             <span className="col-span-2 indent-20 text-left font-semibold">VOTER</span>
-            <span className="col-span-2 font-semibold">DESCRIPTOR</span>
+            <span className="col-span-2 font-semibold">PASSWORD</span>
             <span className="col-span-1 font-semibold">VOTE STATUS</span>
             <span className="col-span-1 font-semibold">
               <button onClick={()=> setPage('list')} className="p-1 px-2 w-16 inline-block border-2 border-red-900 bg-slate-50 text-red-900 text-xs uppercase font-medium rounded"><b>BACK</b></button> 
@@ -83,7 +83,7 @@ export default function Voters({setPage}: any) {
             <span className="col-span-2 font-medium text-left flex flex-row space-x-4">
               <span>{row.name} <em className="block text-blue-900 font-semibold">{row.tag}</em></span>
             </span>
-            <span className="col-span-2 font-medium "><b className="text-xs">{row.descriptor}</b></span>
+            <span className="col-span-2 font-medium "><b className="text-xs italic text-red-800">{row.password}</b></span>
             <span className={`col-span-1 text-xs text-center font-bold`}>{ row.voted == 1 ? 'VOTED':'NOT VOTED' }</span>
             {/*
             <span className="col-span-1 font-bold text-center">
