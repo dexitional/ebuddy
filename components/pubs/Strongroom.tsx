@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import Router from "next/router";import React, { useEffect, useState } from "react";
 import { Chart } from "react-google-charts";
 import { fetchMonitor } from "../../utils/apiClient";
 import { useUserStore } from "../../utils/store";
@@ -99,6 +99,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
     console.log(pageview)
   }, [pageview]);
 
+  if(evsdata && evsdata?.election && evsdata.election[0].allow_monitor == 0) Router.back()
   return (
     <>
       <div className={styles.wrapper}>
