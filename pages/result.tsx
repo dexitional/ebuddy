@@ -48,6 +48,8 @@ const PaperResult = () => {
     syncData();
   }, []);
 
+  if(evsdata && evsdata?.election && evsdata.election[0].allow_result == 0) router.back()
+  
   return (
     <div className="w-full max-w-4xl mx-auto print:m-3">
       <div className="block my-2 print:hidden">
@@ -104,7 +106,22 @@ const PaperResult = () => {
                         </tr>
                         <tr className="body">
                           <td className="relative">
-                            <div className="absolute -top-[4rem] left-10 my-3 flex flex-wrap items-center justify-center"><span className="pl-3 py-1 bg-slate-50/90 border rounded text-blue-900 font-bold italic">SKIPPED VOTES <span className="mx-2 text-red-800">100 - 0.0%</span></span></div>
+                           {getPortfolio(row.name) &&
+                                getPortfolio(row.name)
+                                  .sort((a: any, b: any) => b.votes - a.votes)
+                                  .map((r: any, j: any) => 
+                                    r.name.toLowerCase() != 'skip' ?
+                                (<div className="absolute -top-[3.5rem] left-2 my-3 flex flex-wrap items-center justify-center"><span className="pl-2 py-1 text-xs bg-slate-50/90 border rounded text-blue-900 font-bold italic">
+                                  SKIPPED VOTES 
+                                  <span className="mx-1 text-red-800">{r.votes || 0} - {" "} 
+                                {(
+                                  (parseInt(r.votes) /
+                                        electors.length || 0) *
+                                      100
+                                    ).toFixed(1)}%
+                                    </span></span></div>
+                                  ):null 
+                                )}
                             <div className="my-3 flex flex-wrap items-center justify-center space-x-3">
                               {getPortfolio(row.name) &&
                                 getPortfolio(row.name)
@@ -128,7 +145,7 @@ const PaperResult = () => {
                                           <em className="mx-2 px-2 p-0.5 bg-green-900 text-white text-bold text-sm rounded">
                                             {(
                                               (parseInt(r.votes) /
-                                                electors.length) *
+                                                electors.length || 0) *
                                               100
                                             ).toFixed(1)}
                                             %
@@ -153,7 +170,7 @@ const PaperResult = () => {
                                             <em className="mx-2 px-2 p-0.5 bg-blue-900 text-white text-bold text-sm rounded">
                                               {(
                                                 (parseInt(r.votes) /
-                                                  electors.length) *
+                                                  electors.length || 0) *
                                                 100
                                               ).toFixed(1)}
                                               %

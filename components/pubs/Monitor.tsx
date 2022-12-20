@@ -181,9 +181,6 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
         <div className={styles.main2}>
           <h3 className="w-full flex items-center justify-between text-2xl font-bold text-slate-500 text-center">
             <span>{evsdata?.name}</span>
-            <div className="hidden px-0.5 h-16 rounded-full bg-slate-50 items-center justify-center">
-              <img src={`/api/photos/?tag=logo&eid=${logo}`} className="h-16 object-cover opacity-70 rounded"/>
-            </div>
           </h3>
         </div>
       </div>
