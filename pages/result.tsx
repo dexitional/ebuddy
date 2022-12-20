@@ -48,7 +48,7 @@ const PaperResult = () => {
     syncData();
   }, []);
 
-  if(evsdata && evsdata?.election && evsdata.election[0].allow_result == 0) router.back()
+  if(!evsdata || (evsdata && evsdata?.election && evsdata.election[0].allow_result == 0)) router.back()
   
   return (
     <div className="w-full max-w-4xl mx-auto print:m-3">
