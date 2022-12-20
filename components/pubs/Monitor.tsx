@@ -88,8 +88,8 @@ export default function Monitor({setPage, eid:id, ename: sname, logo}:any) {
           data: [],
         },
       ],
-      
     };
+
     const dm = chartData?.filter((r: any) => r.portfolio.name == name);
     if (dm && dm.length > 0) {
       const dmx = dm
