@@ -99,7 +99,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
     console.log(pageview)
   }, [pageview]);
 
-  if(evsdata && evsdata?.election && evsdata.election[0].allow_monitor == 0) Router.back()
+  if(evsdata && evsdata?.election && evsdata.election[0].allow_vip == 0) Router.back()
   return (
     <>
       <div className={styles.wrapper}>
@@ -173,7 +173,7 @@ export default function Strongroom({setPage, eid:id, ename: sname, logo}:any) {
                             <div className="my-2 pb-4 flex flex-row items-start space-x-6 ">
                               <img
                                 //src={`/api/photos/?tag=candid&eid=${r.id}`}
-                                src={`/upload/2022/${r.photo_id}.jpg`}
+                                src={ r.tag == 'skip' ? `/upload/no.png`:`/upload/2022/${r.photo_id}.jpg`}
                                 alt={r.name}
                                 loading="lazy"
                                 className="h-24 w-22 p-2 border border-1 border-slate-200 rounded-md"
