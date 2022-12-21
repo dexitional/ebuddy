@@ -10,7 +10,7 @@ import axios from 'axios';
 import Router, { useRouter } from 'next/router'
 import Notiflix from 'notiflix'
 import moment from 'moment'
-import { fetchElectionDataById, saveAction } from '../../utils/apiClient'
+import { fetchElectionDataById, saveAction, syncData } from '../../utils/apiClient'
 import On from '../../public/on.png'
 import Off from '../../public/off.png'
 import Link from 'next/link'
@@ -20,6 +20,7 @@ export default function Controls({setPage}: any) {
   const [ data,setData ] = useState<any>({});
   const [ form,setForm ] = useState<any>({});
   const [ keyword,setKeyword ] = useState<string>("");
+  const [ syncing,setSyncing ] = useState<any>(false);
   const { admin, eid, ename } = useUserStore((state) => state);
   const router = useRouter()
   
@@ -29,6 +30,17 @@ export default function Controls({setPage}: any) {
       setData(res.data.election[0])
     }
   }
+
+  const sync = async (eid:any) => {
+   setSyncing(true)
+   const res  = await syncData(eid)
+   if(res.success){
+     setSyncing(false)
+     Notiflix.Notify.success('VOTER TRANSCRIPT SYNCED!');
+   }else{
+     setSyncing(false)
+   }
+ }
 
   const saveControl = async () => {
     const dt = { id:eid, data: form }
@@ -49,7 +61,6 @@ export default function Controls({setPage}: any) {
   },[])
 
   useEffect(() => {
-    //console.log(form)
     saveControl()
   },[form])
 
@@ -127,6 +138,7 @@ export default function Controls({setPage}: any) {
                   { data.allow_monitor == 1 ? <Link href="/public"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">MONITOR ELECTIONS</span></Link> :null}
                   { data.allow_vip == 1 ? <Link href="/vvip"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">VIEW STRONG ROOM</span></Link>:null }
                   { data.allow_result == 1 ? <Link href="/result"><span className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">VIEW FINAL RESULTS</span></Link> : null }
+                  { data.live_status == 1 ? !syncing ? (<button onClick={() => sync(data.id)}><div className="p-0.5 px-1 mt-4 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer">SYNC VOTER TRANSCRIPTS </div></button>): (<button><div className="p-0.5 px-2 mt-4 flex items-center space-x-3 rounded border text-[10px] font-semibold text-center text-blue-900/90 hover:underline border-blue-900/90 cursor-pointer"><img src="/loaderm.gif" className="h-4" /><span>SYNCING ...</span></div></button>) : null }
                   </div>
                   </React.Fragment>
                

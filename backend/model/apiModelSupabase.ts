@@ -510,11 +510,12 @@ module.exports = {
     }
   },
 
-  syncVoteData2: async () => {
+  syncVoteData2: async (id: string) => {
     try {
-      //var { data: res } = await db.from('eb_elector').select('*')
-      const res = require('./voted.json')
+      var { data: res } = await db.from('eb_elector').select('*').eq('election_id', id)
+      //const res = require('./voted.json')
       var mdata: any = {}
+      var count = 0;
       if (res && res.length > 0) {
         //await db.from('eb_candidate').update({ votes2: 0 })
         for (const vs of res) {
@@ -527,18 +528,18 @@ module.exports = {
                 mdata[vm] = 1
               }
               console.log(mdata[vm])
-              // const { data: vc }: any = await db.from('eb_candidate').select("votes2").eq('id', vm.trim()).single()
-              // const { data: rm } = await db.from('eb_candidate').update({ votes2: (vc.votes2 + 1) }).eq('id', vm.trim()).select()
-              // console.log(rm)
             }
           }
         }
       }
 
       for (const [key, value] of Object.entries(mdata)) {
-        const { data: rm } = await db.from('eb_candidate').update({ votes: value }).eq('id', key).select()
+        const { data: rm }: any = await db.from('eb_candidate').update({ votes: value }).eq('id', key).select()
+        if (rm) count += 1;
         console.log(rm)
       }
+      return count;
+
     } catch (e: any) {
       return {
         success: false,

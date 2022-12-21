@@ -126,6 +126,11 @@ export const loadPhoto = async (id) => {
   return res.data;
 };
 
+export const syncData = async (id) => {
+  const res = await axios.get(`/api/sync?eid=${id}`);
+  return res.data;
+};
+
 export const fetchCentres = async (id) => {
   const res = await axios.get(`/api/centres`);
   return res.data;

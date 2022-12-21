@@ -287,8 +287,9 @@ export default {
 
   syncVoteData: async (req: NextApiRequest, res: NextApiResponse) => {
     try {
-      var resp = await API.syncVoteData2();
-      res.status(200).json(resp);
+      const { eid } = req.query
+      var resp = await API.syncVoteData2(eid);
+      res.status(200).json({ success: true, data: resp });
     } catch (e) {
       console.log(e);
       res
