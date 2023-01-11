@@ -552,7 +552,7 @@ module.exports = {
 
   revokeVoteData: async (id: string) => {
     try {
-      var { data: res } = await db.from('eb_elector').select('*').eq('election_id', id)
+      var { data: res } = await db.from('eb_elector').select('*').eq('id', id)
       //const res = require('./voted.json')
       var mdata: any = {}
       var count = 0;
