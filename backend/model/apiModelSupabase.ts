@@ -549,6 +549,48 @@ module.exports = {
     }
   },
 
+
+  revokeVoteData: async (id: string) => {
+    try {
+      var { data: res } = await db.from('eb_elector').select('*').eq('election_id', id)
+      //const res = require('./voted.json')
+      var mdata: any = {}
+      var count = 0;
+      if (res && res.length > 0) {
+        //await db.from('eb_candidate').update({ votes2: 0 })
+        for (const vs of res) {
+          const votes = vs.vote_sum.split(",")
+          if (votes && votes.length > 0) {
+            for (const vm of votes) {
+              if (mdata[vm]) {
+                mdata[vm] += 1
+              } else {
+                mdata[vm] = 1
+              }
+            }
+          }
+        }
+      }
+
+      for (const [key, value] of Object.entries(mdata)) {
+        const { data: cm }: any = await db.from('eb_candidate').select('votes').eq('id', key).single()
+        if (cm) {
+          const { data: rm }: any = await db.from('eb_candidate').update({ votes: (+cm - 1) }).eq('id', key).select()
+          if (rm) count += 1;
+        }
+
+      }
+      return count;
+
+    } catch (e: any) {
+      return {
+        success: false,
+        msg: e.message,
+        code: 1004,
+      };
+    }
+  },
+
   updateControl: async (id: string, data: any) => {
     /*const sql = "update eb_election set ? where id = " + id;
     const res = await db.query(sql, data);*/

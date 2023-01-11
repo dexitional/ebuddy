@@ -14,7 +14,7 @@ const app = nc<NextApiRequest, NextApiResponse>({
 
 
 app.get((req,res) => {
-   return API.syncVoteData(req,res)
+   return API.revokeVoteData(req,res)
 })
 
 export default app;

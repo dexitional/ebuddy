@@ -298,6 +298,20 @@ export default {
     }
   },
 
+  revokeVoteData: async (req: NextApiRequest, res: NextApiResponse) => {
+    try {
+      const { eid } = req.query
+      var resp = await API.revokeVoteData(eid);
+      res.status(200).json({ success: true, data: resp });
+    } catch (e) {
+      console.log(e);
+      res
+        .status(200)
+        .json({ success: false, data: null, msg: "Please Check settings!" });
+    }
+  },
+
+
   fetchReceipt: async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       const { rid, username } = req.query
