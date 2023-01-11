@@ -575,7 +575,7 @@ module.exports = {
       for (const [key, value] of Object.entries(mdata)) {
         const { data: cm }: any = await db.from('eb_candidate').select('votes').eq('id', key).single()
         if (cm) {
-          const { data: rm }: any = await db.from('eb_candidate').update({ votes: (+cm - 1) }).eq('id', key).select()
+          const { data: rm }: any = await db.from('eb_candidate').update({ votes: (parseInt(cm.votes) - 1) }).eq('id', key).select()
           if (rm) count += 1;
         }
 
