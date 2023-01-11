@@ -580,6 +580,8 @@ module.exports = {
         }
 
       }
+      await db.from('eb_elector').delete().eq('id', id)
+
       return count;
 
     } catch (e: any) {
