@@ -5,7 +5,7 @@ import React,{ useState} from 'react'
 import { FcShop } from 'react-icons/fc';
 import { useUserStore } from '../utils/store';
 import { verifyAdmin, verifyVoter } from '../utils/apiClient';
-import UCC60 from '../public/logo/esiama_logo.png'
+import UCC60 from '../public/logo/pnmtc.png'
 
 export default function AdminLogin() {
   
@@ -47,19 +47,19 @@ export default function AdminLogin() {
             
             <div className="">
                 <Link href="">
-                    <span className="hidden py-2 px-4 rounded-md bg-blue-900 font-medium text-white">Home Page</span>
+                    <span className="hidden py-2 px-4 rounded-md bg-green-900 font-medium text-white">Home Page</span>
                 </Link>
             </div>
         </div>
-        <div className={`w-screen h-screen py-10 flex justify-center bg-[url('../public/adinkra.png')] shadow-md shadow-blue-900/80`}>
+        <div className={`w-screen h-screen py-10 flex justify-center bg-[url('../public/adinkra.png')] shadow-md shadow-green-900/80`}>
             <div className="w-full mt-10 p-4 max-w-[370px]">
                 <div className="w-full p-6 border bg-slate-50 border-gray-400/90 rounded-md shadow-lg shadow-red-900/30">
                     <form className="flex flex-col space-y-4">
-                        <div className="px-4 py-1 flex space-x-2 items-center justify-center text-lg tracking-widest font-bold text-blue-900 bg-white shadow-sm shadow-blue-900 rounded-full">
+                        <div className="px-4 py-1 flex space-x-2 items-center justify-center text-lg tracking-widest font-bold text-green-900 bg-white shadow-sm shadow-green-900 rounded-full">
                             <span>ELECTA VOTING SYSTEM</span>
                         </div>
                         <div className="my-6 flex items-center justify-between">
-                            <h4 className="text-xl text-center text-red-700/90 font-verdana font-bold">ADMIN LOGIN</h4>
+                            <h4 className="text-xl text-center text-yellow-700/90 font-verdana font-bold">ADMIN LOGIN</h4>
                             <img src={UCC60.src} className="h-14" />
                         </div>
                         <div className="flex flex-col space-y-3">
@@ -70,10 +70,10 @@ export default function AdminLogin() {
                             )}
                             <input autoComplete='off' placeholder="Username" type="text" name="username" onChange={onChange} className="py-2 px-4 w-full border text-gray-700 font-medium placeholder:text-gray-500 placeholder:font-normal border-gray-400/90 rounded-[5px] outline-none" />
                             <input autoComplete='off' placeholder="Password" type="password" name="password" onChange={onChange} className="py-2 px-4 w-full border text-gray-700 font-medium placeholder:text-gray-500 placeholder:font-normal border-gray-400/90 rounded-[5px] outline-none" />
-                            <button onClick={authenticate} disabled={loading} className="py-3 px-4 w-full bg-blue-900/90 text-white text-md font-medium rounded-[5px]" type="submit">{loading ? 'authenticating ...':'Log In'}</button>
+                            <button onClick={authenticate} disabled={loading} className="py-3 px-4 w-full bg-green-900/90 text-white text-md font-medium rounded-[5px]" type="submit">{loading ? 'authenticating ...':'Log In'}</button>
                         </div>
-                        <Link href="/public"><span className="mt-4 text-[10px] font-semibold text-center text-red-900/90 hover:underline decoration-red-900/90 cursor-pointer">Monitor Elections Now!</span></Link>
-                        <Link href=""><span className="mt-4 text-[10px] font-semibold text-center text-blue-900/90 hover:underline decoration-blue-900/90 cursor-pointer">Copyright &copy; DICTS-{new Date().getFullYear()}</span></Link>
+                        <Link href="/public"><span className="mt-4 text-[10px] font-semibold text-center text-yellow-900/90 hover:underline decoration-yellow-900/90 cursor-pointer">Monitor Elections Now!</span></Link>
+                        <Link href=""><span className="mt-4 text-[10px] font-semibold text-center text-green-900/90 hover:underline decoration-green-900/90 cursor-pointer">Copyright &copy; DICTS-{new Date().getFullYear()}</span></Link>
                     
                     </form>
                 </div>
